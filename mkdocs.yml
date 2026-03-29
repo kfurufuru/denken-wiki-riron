@@ -1,0 +1,129 @@
+site_name: "電験3種 理論Wiki"
+site_description: "電験3種 理論 — 公式×直感×過去問クロスリファレンス"
+site_url: "https://kfurufuru.github.io/denken-wiki-riron/"
+site_author: "Furutachi"
+repo_url: "https://github.com/kfurufuru/denken-wiki-riron"
+repo_name: "denken-wiki-riron"
+copyright: "&copy; 2026 Furutachi — 個人学習用"
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: ja
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kfurufuru/denken-wiki-riron
+      name: GitHub リポジトリ
+
+nav:
+  - Home: index.md
+  - 学習ロードマップ:
+    - roadmap/index.md
+    - 初学者パス: roadmap/beginner.md
+    - 過去問逆引き: roadmap/by-weakness.md
+    - 直前確認パス: roadmap/last-minute.md
+  - テーマ別:
+    - themes/index.md
+    - 電気回路:
+      - 直流回路: themes/chokuryu-kairo.md
+      - 交流回路基礎: themes/kouryu-kiso.md
+      - RLC回路: themes/rlc-kairo.md
+      - 交流電力: themes/kouryu-denryoku.md
+      - 三相交流: themes/sansou-kouryu.md
+      - 過渡現象: themes/kato-gensho.md
+    - 電磁気:
+      - 静電気: themes/seidenki.md
+      - コンデンサ: themes/condenser.md
+      - 電磁力: themes/denjiryoku.md
+      - 磁気回路: themes/jiki-kairo.md
+      - インダクタンス: themes/inductance.md
+    - 電子理論:
+      - 半導体: themes/handotai.md
+      - トランジスタ・FET: themes/transistor.md
+      - オペアンプ: themes/opamp.md
+    - 電気計測:
+      - 計器の原理: themes/keiki.md
+      - ブリッジ回路: themes/bridge.md
+  - 過去問マッピング:
+    - kakomon/index.md
+    - 年度別一覧: kakomon/by-year.md
+    - 分野別一覧: kakomon/by-field.md
+  - リファレンス:
+    - reference/index.md
+    - 頻出公式一覧: reference/formulas.md
+    - 単位・次元チェック表: reference/units.md
+    - 数学の道具箱: reference/math-tools.md
+    - 用語集: reference/glossary.md
+    - 回路パターン集: reference/circuit-patterns.md
+    - 絵文字マーカー凡例: reference/emoji-legend.md
+    - バージョニング基準: reference/versioning.md
