@@ -25,7 +25,46 @@ tags: [ロードマップ, 学習設計]
 理論16テーマには学習上の依存関係がある。フェーズ順に進むと、前提知識が積み上がった状態で
 各テーマに入れる。
 
-> **注意**: 視覚的な依存グラフ（Mermaid）は v1.0 で追加予定。現在はテキスト表現で代替。
+```mermaid
+graph TD
+    DC[直流回路] --> AC_K[交流回路基礎]
+    DC --> BRG[ブリッジ回路]
+    DC --> KAT[過渡現象]
+    SEI[静電気] --> CON[コンデンサ]
+    CON --> KAT
+    CON --> RLC[RLC回路]
+    AC_K --> RLC
+    AC_K --> PWR[交流電力]
+    RLC --> PWR
+    RLC --> SAN[三相交流]
+    PWR --> SAN
+    DEN[電磁力] --> MAG[磁気回路]
+    MAG --> IND[インダクタンス]
+    IND --> KAT
+    HAN[半導体] --> TRN[トランジスタ・FET]
+    TRN --> OPA[オペアンプ]
+    DC --> KEI[計器の原理]
+
+    style DC fill:#4051b5,color:#fff
+    style SEI fill:#4051b5,color:#fff
+    style DEN fill:#4051b5,color:#fff
+    style HAN fill:#4051b5,color:#fff
+    style AC_K fill:#6675c8,color:#fff
+    style CON fill:#6675c8,color:#fff
+    style RLC fill:#6675c8,color:#fff
+    style MAG fill:#6675c8,color:#fff
+    style PWR fill:#8893d4,color:#fff
+    style SAN fill:#8893d4,color:#fff
+    style IND fill:#8893d4,color:#fff
+    style TRN fill:#8893d4,color:#fff
+    style KAT fill:#aab0e0,color:#333
+    style BRG fill:#aab0e0,color:#333
+    style OPA fill:#aab0e0,color:#333
+    style KEI fill:#aab0e0,color:#333
+```
+
+> 矢印は「→ の元テーマを理解してから進む」ことを推奨する依存関係。
+> 濃い色（🟦）= Phase 1-2の基礎テーマ。薄い色（🟪）= Phase 3-4の応用テーマ。
 
 ### Phase 1 — 基礎固め
 

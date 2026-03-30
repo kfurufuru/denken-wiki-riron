@@ -1,81 +1,95 @@
 ---
-tags: [home]
+hide:
+  - navigation
+  - toc
 ---
 
 # 電験3種 理論Wiki
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-brightgreen?logo=github)](https://kfurufuru.github.io/denken-wiki-riron/)
-[![MkDocs Material](https://img.shields.io/badge/MkDocs-Material-blue?logo=materialdesignicons)](https://squidfunk.github.io/mkdocs-material/)
-[![License](https://img.shields.io/badge/license-個人学習用-lightgrey)](https://github.com/kfurufuru/denken-wiki-riron)
+**公式×直感×過去問クロスリファレンス** — バス通勤中に読める、試験で使える理論科目の参照Wikiです。
+
+---
+
+## このWikiの使い方
+
+=== "📚 はじめて学ぶ"
+    **初学者パス**で依存関係順に学習する。
+
+    直流回路 → 静電気 → 交流基礎 → RLC → 三相 → 電磁気 → 電子理論
+
+    → [初学者パスへ](roadmap/beginner.md)
+
+=== "🔍 苦手を潰す"
+    **過去問逆引きパス**で間違えた問題からテーマを特定する。
+
+    「キルヒホッフ」「インピーダンス」「Y-Δ」などのキーワードでテーマを探す。
+
+    → [過去問逆引きへ](roadmap/by-weakness.md)
+
+=== "⚡ 直前確認"
+    **直前確認パス**で16テーマの「5秒で思い出す」を一気に確認する。
+
+    → [直前確認パスへ](roadmap/last-minute.md)
+
+---
+
+## 16テーマ クイックアクセス
+
+### ⚡ 電気回路
+| テーマ | 難易度 | 頻度 |
+|--------|--------|------|
+| [直流回路（オーム・キルヒホッフ・テブナン）](themes/chokuryu-kairo.md) | ★★★ | ★★★★★ |
+| [交流回路基礎（実効値・フェーザー・位相）](themes/kouryu-kiso.md) | ★★★★ | ★★★★★ |
+| [RLC回路（インピーダンス・共振・Q値）](themes/rlc-kairo.md) | ★★★★★ | ★★★★★ |
+| [交流電力（有効・無効・皮相・力率）](themes/kouryu-denryoku.md) | ★★★★ | ★★★★☆ |
+| [三相交流（Y-Δ変換・三相電力）](themes/sansou-kouryu.md) | ★★★★★ | ★★★★★ |
+| [過渡現象（RC・RL時定数）](themes/kato-gensho.md) | ★★★★ | ★★★☆☆ |
+
+### 🧲 電磁気
+| テーマ | 難易度 | 頻度 |
+|--------|--------|------|
+| [静電気（クーロン力・電界・電位）](themes/seidenki.md) | ★★★ | ★★★★☆ |
+| [コンデンサ（静電容量・エネルギー）](themes/condenser.md) | ★★★ | ★★★★★ |
+| [電磁力（フレミング・電磁誘導）](themes/denjiryoku.md) | ★★★ | ★★★★☆ |
+| [磁気回路（磁束・磁気抵抗）](themes/jiki-kairo.md) | ★★★★ | ★★★☆☆ |
+| [インダクタンス（自己・相互・エネルギー）](themes/inductance.md) | ★★★★ | ★★★☆☆ |
+
+### 💡 電子理論
+| テーマ | 難易度 | 頻度 |
+|--------|--------|------|
+| [半導体（PN接合・ダイオード）](themes/handotai.md) | ★★★ | ★★★☆☆ |
+| [トランジスタ・FET（増幅回路）](themes/transistor.md) | ★★★★ | ★★★☆☆ |
+| [オペアンプ（反転・非反転）](themes/opamp.md) | ★★★ | ★★☆☆☆ |
+
+### 📏 電気計測
+| テーマ | 難易度 | 頻度 |
+|--------|--------|------|
+| [計器の原理と測定法](themes/keiki.md) | ★★★ | ★★☆☆☆ |
+| [ブリッジ回路（ホイートストン・マクスウェル）](themes/bridge.md) | ★★★ | ★★☆☆☆ |
+
+---
+
+## リファレンス クイックアクセス
+
+| ページ | 用途 |
+|--------|------|
+| [頻出公式一覧](reference/formulas.md) | 試験直前の公式確認 |
+| [数学の道具箱](reference/math-tools.md) | 複素数・ベクトル・三角関数 |
+| [単位・次元チェック表](reference/units.md) | 計算の自己確認 |
+| [回路パターン集](reference/circuit-patterns.md) | 典型回路の解法テンプレート |
+| [用語集](reference/glossary.md) | 用語の定義確認 |
 
 ---
 
 ## このWikiについて
 
-電験3種（第三種電気主任技術者）の **理論科目** に特化した個人学習用リファレンスです。
-公式の導出・直感的な理解・過去問へのクロスリファレンスの3軸で構成しています。
+!!! info "バージョン表記"
+    - **v0.7draft**: AI生成・構造検証済み・内容要確認（現在の状態）
+    - **v0.7**: 教科書・過去問で検証済み
+    - **v1.0**: 過去問全問リンク・依存グラフ完成
 
-> **対象**: 電験3種 理論科目（電気回路・電磁気・電子理論・電気計測）
-> **目的**: 「なぜそうなるか」を理解し、初見問題にも対応できる思考力を養う
+    出題実績データは電験王3（denken-ou.com）H18〜R07上期より収集（2026-03-30）。
 
----
-
-## Wikiの構成
-
-このWikiは4つのセクションで構成されています。
-
-| セクション | 内容 |
-|---|---|
-| **学習ロードマップ** | 初学者パス・弱点別逆引き・直前確認の3コース |
-| **テーマ別** | 16テーマを分野ごとに整理。公式×直感×過去問 |
-| **過去問マッピング** | 年度別・分野別に過去問をテーマページへひもづけ |
-| **リファレンス** | 公式一覧・単位表・数学ツール・用語集 |
-
----
-
-## クイックアクセス
-
-<div class="grid cards" markdown>
-
-- :material-school: **初学者パス**
-
-    ---
-
-    電気回路の基礎から順番に学ぶ推奨コース。
-    Phase 1〜4の制作順に沿って進めると効率的。
-
-    [:octicons-arrow-right-24: 初学者パスへ](roadmap/beginner.md)
-
-- :material-clock-fast: **直前確認パス**
-
-    ---
-
-    試験直前に確認すべき頻出公式・落とし穴をまとめたコース。
-    理解度スコア3以下のテーマを重点的に確認。
-
-    [:octicons-arrow-right-24: 直前確認パスへ](roadmap/last-minute.md)
-
-- :material-view-grid: **テーマ一覧**
-
-    ---
-
-    16テーマを難易度・出題頻度・優先度とともに一覧表示。
-    弱点テーマへのショートカットに活用。
-
-    [:octicons-arrow-right-24: テーマ一覧へ](themes/index.md)
-
-</div>
-
----
-
-## バージョニング基準
-
-各ページには成熟度を示すバッジが付いています。
-
-| バッジ | 意味 |
-|---|---|
-| <span class="version-badge v05">v0.5</span> | AI生成+構造化済み。⚠️マーク付き（未検証） |
-| <span class="version-badge v07">v0.7</span> | 教科書・Web検証済み。⚠️→✅ |
-| <span class="version-badge v10">v1.0</span> | 過去問全問リンク+Level 2/3+学習ロードマップ完成 |
-
-詳細は [バージョニング基準](reference/versioning.md) を参照。
+!!! warning "学習上の注意"
+    本Wikiの公式・数値は教科書や公式過去問で必ず確認してください。
+    AIが生成したコンテンツを含むため、誤りが含まれる可能性があります。

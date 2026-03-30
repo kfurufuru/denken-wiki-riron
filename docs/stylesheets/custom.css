@@ -114,6 +114,12 @@
   font-size: 1.15em !important;
 }
 
+/* 数式ブロック横スクロール（全画面） */
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* --- 数式ブロック 左右パディング調整（スマホ） --- */
 @media screen and (max-width: 600px) {
   .md-typeset .arithmatex {
