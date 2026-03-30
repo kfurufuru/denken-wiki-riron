@@ -108,6 +108,12 @@
   color: #fff;
 }
 
+/* --- テーブル内MathJax数式の見やすさ向上 --- */
+.md-typeset td .MathJax,
+.md-typeset th .MathJax {
+  font-size: 1.15em !important;
+}
+
 /* --- 数式ブロック 左右パディング調整（スマホ） --- */
 @media screen and (max-width: 600px) {
   .md-typeset .arithmatex {
