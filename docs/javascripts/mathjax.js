@@ -13,7 +13,8 @@ window.MathJax = {
     }
   },
   options: {
-    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
+    ignoreHtmlClass: ".*|",
+    processHtmlClass: "arithmatex"
   }
 };
 
