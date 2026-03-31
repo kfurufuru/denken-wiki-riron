@@ -106,34 +106,34 @@ graph TD
 
 ### 電気回路
 
-| テーマ | ファイル |
+| テーマ | リンク |
 |---|---|
-| 直流回路 | [dc-circuit.md](../dc-circuit.md) |
-| 交流回路基礎 | [ac-basics.md](../ac-basics.md) |
-| RLC回路 | [rlc-circuit.md](../rlc-circuit.md) |
-| 交流電力 | [ac-power.md](../ac-power.md) |
-| 三相交流 | [three-phase.md](../three-phase.md) |
-| 過渡現象 | [transient.md](../transient.md) |
-| ブリッジ回路 | [bridge-circuit.md](../bridge-circuit.md) |
+| 直流回路 | [→ 直流回路](../themes/chokuryu-kairo.md) |
+| 交流回路基礎 | [→ 交流回路基礎](../themes/kouryu-kiso.md) |
+| RLC回路 | [→ RLC回路](../themes/rlc-kairo.md) |
+| 交流電力 | [→ 交流電力](../themes/kouryu-denryoku.md) |
+| 三相交流 | [→ 三相交流](../themes/sansou-kouryu.md) |
+| 過渡現象 | [→ 過渡現象](../themes/kato-gensho.md) |
+| ブリッジ回路 | [→ ブリッジ回路](../themes/bridge.md) |
 
 ### 電磁気
 
-| テーマ | ファイル |
+| テーマ | リンク |
 |---|---|
-| 静電気 | [electrostatics.md](../electrostatics.md) |
-| コンデンサ | [capacitor.md](../capacitor.md) |
-| 電磁力 | [electromagnetic-force.md](../electromagnetic-force.md) |
-| 磁気回路 | [magnetic-circuit.md](../magnetic-circuit.md) |
-| インダクタンス | [inductance.md](../inductance.md) |
+| 静電気 | [→ 静電気](../themes/seidenki.md) |
+| コンデンサ | [→ コンデンサ](../themes/condenser.md) |
+| 電磁力 | [→ 電磁力](../themes/denjiryoku.md) |
+| 磁気回路 | [→ 磁気回路](../themes/jiki-kairo.md) |
+| インダクタンス | [→ インダクタンス](../themes/inductance.md) |
 
 ### 電子理論・電気計測
 
-| テーマ | ファイル |
+| テーマ | リンク |
 |---|---|
-| 半導体 | [semiconductor.md](../semiconductor.md) |
-| トランジスタ | [transistor.md](../transistor.md) |
-| オペアンプ | [opamp.md](../opamp.md) |
-| 計器の原理 | [instruments.md](../instruments.md) |
+| 半導体 | [→ 半導体](../themes/handotai.md) |
+| トランジスタ | [→ トランジスタ](../themes/transistor.md) |
+| オペアンプ | [→ オペアンプ](../themes/opamp.md) |
+| 計器の原理 | [→ 計器の原理](../themes/keiki.md) |
 
 ---
 

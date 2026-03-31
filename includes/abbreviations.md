@@ -42,3 +42,15 @@
 *[Q]: 無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]
 *[S]: 皮相電力 (Apparent Power) [VA]
 *[cosφ]: 力率 (Power Factor) — 有効電力/皮相電力
+*[ω]: 角周波数 (Angular Frequency) — ω = 2πf [rad/s]。リアクタンス XL=ωL、XC=1/(ωC) の計算に使用
+*[j]: 虚数単位 — j = √(-1)。電気では i を電流と区別するため j を使用。フェーザー・複素インピーダンスの基本
+*[φ]: 位相角 (Phase Angle) — 電圧と電流の波形のズレを角度で表す。力率 cosφ を決める
+*[ε₀]: 真空の誘電率 (Permittivity of Free Space) — 8.85×10⁻¹² F/m
+*[μ₀]: 真空の透磁率 (Permeability of Free Space) — 4π×10⁻⁷ H/m
+*[VA]: ボルトアンペア — 皮相電力の単位
+*[var]: バール (Volt-Ampere Reactive) — 無効電力の単位
+*[PF]: 力率 (Power Factor) = cosφ = P/S
+*[ELI]: コイル回路の位相関係の覚え方 — E（電圧）がL（インダクタンス）でI（電流）より進む
+*[ICE]: コンデンサ回路の位相関係の覚え方 — I（電流）がC（コンデンサ）でE（電圧）より進む
+*[Norton]: ノートン等価回路 — 任意の線形回路を電流源と並列インピーダンスで等価表現する手法
+*[Thevenin]: テブナン等価回路 — 任意の線形回路を電圧源と直列インピーダンスで等価表現する手法
