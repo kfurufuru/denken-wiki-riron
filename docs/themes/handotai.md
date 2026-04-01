@@ -5,13 +5,10 @@ next: [トランジスタ・FET]
 difficulty: ★★★
 exam_frequency: 中（毎回1問）
 analogy_type: valve
-version: v0.7draft
+version: v0.7
 ---
 
 # 💡 半導体
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > 条件によって導体にも絶縁体にもなれる物質。ドーピングとPN接合で「電流の弁」を作る。
 
@@ -277,4 +274,4 @@ $$V_H = R_H \cdot \frac{BI}{d}$$
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

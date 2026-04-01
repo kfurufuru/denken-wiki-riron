@@ -5,13 +5,10 @@ next: []
 difficulty: ★★★
 exam_frequency: 低（パターン固定で得点源）
 analogy_type: ideal-amplifier
-version: v0.7draft
+version: v0.7
 ---
 
 # 🔌 オペアンプ
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > 2つの入力の差を増幅する素子。負帰還をかけることで安定した増幅回路を構成する。仮想接地（イマジナリーショート）が計算の鍵。
 
@@ -164,4 +161,4 @@ version: v0.7draft
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

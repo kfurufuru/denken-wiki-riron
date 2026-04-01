@@ -5,13 +5,10 @@ next: [RLC回路, 過渡現象]
 difficulty: ★★★
 exam_frequency: 高
 analogy_type: water-tank
-version: v0.7draft
+version: v0.7
 ---
 
 # 🔋 コンデンサ
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > 電荷を蓄える受動素子。直流は通さず、交流は通す。静電容量・エネルギー・直並列合成が頻出。
 
@@ -73,7 +70,7 @@ version: v0.7draft
 
 | 項目 | 誘電体なし（真空） | 誘電体あり（比誘電率 $\varepsilon_r$） |
 |------|-----------------|--------------------------------------|
-| 透磁率 | $\varepsilon_0 = 8.85 \times 10^{-12}$ F/m | $\varepsilon_0 \varepsilon_r$ |
+| 誘電率 | $\varepsilon_0 = 8.85 \times 10^{-12}$ F/m | $\varepsilon_0 \varepsilon_r$ |
 | 静電容量 | $C_0 = \varepsilon_0 S/d$ | $C = \varepsilon_r C_0$（$\varepsilon_r$ 倍に増加） |
 | 電界強度 $E$ | 高い | 低い（分極による打ち消し） |
 
@@ -275,4 +272,4 @@ $$C = 4\pi\varepsilon_0\varepsilon_r \cdot \frac{ab}{b-a}$$
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

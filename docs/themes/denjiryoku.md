@@ -5,13 +5,10 @@ next: [磁気回路, インダクタンス]
 difficulty: ★★★
 exam_frequency: 高
 analogy_type: right-hand
-version: v0.7draft
+version: v0.7
 ---
 
 # ⚡ 電磁力
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > 電流が磁界から受ける力（モーター原理）と、磁界の変化で起電力が生まれる現象（発電機原理）の2本柱。フレミングの手の使い分けが最重要。
 
@@ -164,4 +161,4 @@ version: v0.7draft
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

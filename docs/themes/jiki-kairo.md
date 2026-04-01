@@ -5,13 +5,10 @@ next: [インダクタンス]
 difficulty: ★★★★
 exam_frequency: 中
 analogy_type: electric-circuit
-version: v0.7draft
+version: v0.7
 ---
 
 # 🧲 磁気回路
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > 磁束が閉じた経路を流れる回路。電気回路と構造が1:1対応するため、「磁気のオームの法則」として解析できる。空隙（エアギャップ）の扱いが試験の核心。
 
@@ -165,4 +162,4 @@ version: v0.7draft
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

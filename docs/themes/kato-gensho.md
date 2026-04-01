@@ -5,13 +5,10 @@ next: []
 difficulty: ★★★★
 exam_frequency: 中
 analogy_type: filling
-version: v0.7draft
+version: v0.7
 ---
 
 # 🌊 過渡現象
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > スイッチON/OFFの瞬間から定常状態に落ち着くまでの「変化の過程」。時定数 \(\tau\) が変化の速さを決める。
 
@@ -173,4 +170,4 @@ version: v0.7draft
 ??? info "Level 3: 実務との接点 🏭"
     変圧器や電動機の突入電流、遮断器の開閉サージがRLC過渡現象そのもの。現場では「時定数が長いほど突入電流が長く続く」「サージアブソーバはCで高周波を吸収する」として直感的に使う。
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

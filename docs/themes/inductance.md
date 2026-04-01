@@ -5,13 +5,10 @@ next: [RLC回路, 過渡現象]
 difficulty: ★★★★
 exam_frequency: 中
 analogy_type: flywheel
-version: v0.7draft
+version: v0.7
 ---
 
 # 🌀 インダクタンス
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > コイルは「電流の変化を嫌がる素子」。磁界にエネルギーを蓄え、電流変化に逆らう起電力を発生させる。
 
@@ -146,4 +143,4 @@ version: v0.7draft
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*

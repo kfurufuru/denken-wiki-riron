@@ -5,13 +5,10 @@ next: [交流回路基礎, ブリッジ回路]
 difficulty: ★★★
 exam_frequency: 高
 analogy_type: water-flow
-version: v0.7draft
+version: v0.7
 ---
 
 # ⚡ 直流回路（オーム・キルヒホッフ・テブナン）
-
-!!! warning "⚠️ v0.7draft — AI生成・構造検証済み・内容要確認"
-    構造・フロー・出題実績を整備済みです。公式の数値・符号は教科書で要確認。
 
 > 直流回路の問題は「どこに何Vかかり、何Aが流れるか」を求める問題。オーム・KVL・KCL・テブナンの4本柱で9割が解ける。
 
@@ -271,4 +268,4 @@ STEP3：I_N と R_N を並列接続した等価回路に変換
 
 ---
 
-*最終確認: 未実施 | ステータス: v0.7draft | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*
