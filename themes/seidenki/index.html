@@ -1,0 +1,3256 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="電験3種 理論 — 公式×直感×過去問クロスリファレンス">
+      
+      
+        <meta name="author" content="Furutachi">
+      
+      
+        <link rel="canonical" href="https://kfurufuru.github.io/denken-wiki-riron/themes/seidenki/">
+      
+      
+        <link rel="prev" href="../kato-gensho/">
+      
+      
+        <link rel="next" href="../condenser/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>静電気 - 電験3種 理論Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://kfurufuru.github.io/denken-wiki/"
+     style="font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
+    📗 法規Wiki へ移動
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="電験3種 理論Wiki" class="md-header__button md-logo" aria-label="電験3種 理論Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            電験3種 理論Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              静電気
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kfurufuru/denken-wiki-riron" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    denken-wiki-riron
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../roadmap/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  学習ロードマップ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  テーマ別
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../kakomon/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  過去問マッピング
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  リファレンス
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="電験3種 理論Wiki" class="md-nav__button md-logo" aria-label="電験3種 理論Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    電験3種 理論Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kfurufuru/denken-wiki-riron" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    denken-wiki-riron
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../roadmap/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    学習ロードマップ
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    学習ロードマップ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/beginner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初学者パス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/by-weakness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    過去問逆引き
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/last-minute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直前確認パス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    テーマ別
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    テーマ別
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電気回路
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電気回路
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chokuryu-kairo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直流回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kouryu-kiso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    交流回路基礎
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rlc-kairo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RLC回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kouryu-denryoku/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    交流電力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sansou-kouryu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三相交流
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kato-gensho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    過渡現象
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電磁気
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電磁気
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    静電気
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    静電気
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 直感的理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 公式の意味マップ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーA：基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーB：応用変換
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 比較表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 比較表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        電界 vs 磁界
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クーロン力 vs 重力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        導体 vs 絶縁体（誘電体）の電荷分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r07r04h22h20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数点電荷の合力・釣り合い位置：R07上・R04下・H22・H20で繰り返し出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🕳️ よくある勘違いTOP3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 正答者 vs 誤答者
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 出題実績
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛡️ 静電遮蔽（静電シールド）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ 静電遮蔽（静電シールド）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        静電遮蔽の原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        静電遮蔽のメカニズム（図解的説明）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        空洞内に電荷を置いた場合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        接地による完全遮蔽
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        比較表：遮蔽の条件まとめ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある勘違い
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../condenser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    コンデンサ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../denjiryoku/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電磁力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jiki-kairo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    磁気回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inductance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インダクタンス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電子理論
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電子理論
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handotai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    半導体
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transistor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    トランジスタ・FET
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../opamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    オペアンプ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電気計測
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電気計測
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    計器の原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ブリッジ回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../kakomon/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    過去問マッピング
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    過去問マッピング
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kakomon/by-year/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    年度別一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kakomon/by-field/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分野別一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kakomon/reuse-ranking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    再出題ランキング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    リファレンス
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    リファレンス
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/formulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頻出公式一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/units/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    単位・次元チェック表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/math-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数学の道具箱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/circuit-patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回路パターン集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emoji-legend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    絵文字マーカー凡例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    バージョニング基準
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 直感的理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 公式の意味マップ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーA：基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーB：応用変換
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 比較表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 比較表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        電界 vs 磁界
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クーロン力 vs 重力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        導体 vs 絶縁体（誘電体）の電荷分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r07r04h22h20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数点電荷の合力・釣り合い位置：R07上・R04下・H22・H20で繰り返し出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🕳️ よくある勘違いTOP3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 正答者 vs 誤答者
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 出題実績
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛡️ 静電遮蔽（静電シールド）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ 静電遮蔽（静電シールド）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        静電遮蔽の原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        静電遮蔽のメカニズム（図解的説明）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        空洞内に電荷を置いた場合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        接地による完全遮蔽
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        比較表：遮蔽の条件まとめ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある勘違い
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="ナビゲーション" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    テーマ別
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    電磁気
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">電磁気</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">静電気</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">高頻度</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="_1">⚡ 静電気<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>電荷が作る「力の場」と「位置エネルギー」の話。重力と同じ距離の逆二乗則が成り立ち、電界・電位という2つの視点から空間を記述する。</p>
+</blockquote>
+<hr />
+<h2 id="_2">🧠 直感的理解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>電荷は重力と同じ「<mark>距離の逆二乗則</mark>」に従う。電界は「その場に置いた+1Cの電荷が受ける力の向きと大きさの地図」。</li>
+<li>電位は「高さ」のアナロジー：高いところから低いところへ電荷は動く。電池の+極が「山の頂上」、−極が「谷底」のイメージ。</li>
+<li>電界と電位の関係：急峻な「坂（電位差）」ほど電界が強い。<mark>平坦な場所（等電位面）では電界がゼロ</mark>。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">5秒で思い出す</p>
+<p>電界 <span class="arithmatex">\(E\)</span> は力の地図、電位 <span class="arithmatex">\(V\)</span> は高さの地図。急坂（大きな <span class="arithmatex">\(dV/dr\)</span>）= 強い電界。</p>
+</div>
+<hr />
+<h2 id="_3">🔍 公式の意味マップ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="a">レイヤーA：基本概念<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>意味（日本語）</th>
+<th>使える条件</th>
+<th>使えない条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( F = \dfrac{Q_1 Q_2}{4\pi\varepsilon_0 r^2} \)</span></td>
+<td>クーロンの法則：2電荷間の静電力</td>
+<td>真空中・点電荷</td>
+<td>誘電体中（<span class="arithmatex">\(\varepsilon_0 \to \varepsilon_0\varepsilon_r\)</span> に置換）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( E = \dfrac{Q}{4\pi\varepsilon_0 r^2} \)</span></td>
+<td>点電荷が作る電界の強さ</td>
+<td>真空中・点電荷から距離 r</td>
+<td>分布電荷・複数電荷（重ね合わせが必要）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( V = \dfrac{Q}{4\pi\varepsilon_0 r} \)</span></td>
+<td>点電荷が作る電位</td>
+<td>真空中・点電荷から距離 r（無限遠で V=0 基準）</td>
+<td>—</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( F = QE \)</span></td>
+<td>電荷 <abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> が電界 E から受ける力</td>
+<td>任意の電界中</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b">レイヤーB：応用変換<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>公式/手法</th>
+<th>意味</th>
+<th>使える条件</th>
+<th>使えない条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( E = -\dfrac{dV}{dr} \)</span></td>
+<td>電界は電位の空間変化率の負値</td>
+<td>1次元・対称性が高い場合</td>
+<td>複雑な3次元分布（ベクトル計算が必要）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( E = \dfrac{V}{d} \)</span></td>
+<td>平行平板間の一様電界</td>
+<td>均一な電場（平行平板コンデンサ）</td>
+<td>点電荷・球対称など</td>
+</tr>
+<tr>
+<td>ガウスの法則（概念）：<span class="arithmatex">\( \oint \vec{E} \cdot d\vec{S} = Q/\varepsilon_0 \)</span></td>
+<td>閉曲面を貫く電束 = 内部電荷 / <span class="arithmatex">\(\varepsilon_0\)</span></td>
+<td>高い対称性（球・円柱・平面）</td>
+<td>電験3種では概念理解が中心</td>
+</tr>
+<tr>
+<td>重ね合わせの原理</td>
+<td>複数電荷の電界・電位は各々の和</td>
+<td>線形媒質（真空・均一誘電体）</td>
+<td>—</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( W = Q(V_A - V_B) \)</span></td>
+<td>電荷 <abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> を電位 <span class="arithmatex">\(V_B\)</span> の点から <span class="arithmatex">\(V_A\)</span> の点へ移動させるときの仕事</td>
+<td>任意の電界中（経路によらない）</td>
+<td>—</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( C = 4\pi\varepsilon_0 r \)</span></td>
+<td>孤立した導体球（半径 r）の静電容量</td>
+<td>球形導体・無限遠を基準電位とする場合</td>
+<td>平行平板など他の形状では別式</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">仕事 W = QΔV の使い方：R01・R02で繰り返し出題</p>
+<p>電荷を移動させるときの仕事は「電位差 × 電荷量」で求まる。</p>
+<div class="arithmatex">\[W = Q(V_A - V_B)\]</div>
+<ul>
+<li><span class="arithmatex">\(W &gt; 0\)</span> ：外力がした仕事（==低電位 → 高電位==への移動）</li>
+<li><span class="arithmatex">\(W &lt; 0\)</span> ：電界がした仕事（==高電位 → 低電位==への移動、電荷が自然に動く向き）</li>
+</ul>
+<p><strong>よくある出題パターン（R02問1）</strong>：点電荷が作る電界中を別の電荷が移動するとき、「<mark>電位の値を先に求めてから W = QΔV に代入する</mark>」手順が最短。電界の積分を直接計算しようとすると時間を消費する。</p>
+<div class="admonition tip">
+<p class="admonition-title">解法の鉄則</p>
+<p>仕事が問われたら「まず電位を求める」。電位はスカラーなので向きを気にせず足し算できる。</p>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">孤立導体球の静電容量 <abbr title="静電容量 (Capacitance) [F]">C</abbr> = 4πε₀r：R06下・H18で出題</p>
+<p>地球や孤立した球形導体の静電容量を求める問題で使う公式。</p>
+<p>球の電位 <span class="arithmatex">\(V = \dfrac{Q}{4\pi\varepsilon_0 r}\)</span> を変形すると：</p>
+<div class="arithmatex">\[C = \frac{Q}{V} = 4\pi\varepsilon_0 r\]</div>
+<p><strong>数値の目安</strong>：<span class="arithmatex">\(\varepsilon_0 = 8.85 \times 10^{-12}\)</span> F/m を使うと、半径 <span class="arithmatex">\(r = 6.4 \times 10^6\)</span> m の地球でも <span class="arithmatex">\(C \approx 710\ \mu\)</span>F 程度（非常に小さい）。</p>
+<p><strong>引っかかりやすいポイント</strong>：この式は「球の半径 r が大きいほど静電容量が大きい」ことを示す。==平行平板コンデンサの <span class="arithmatex">\(C = \varepsilon_0 S/d\)</span> とは全く異なる形==なので混同しないこと。</p>
+</div>
+<hr />
+<h2 id="_4">📊 比較表<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="vs">電界 vs 磁界<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>電界 <span class="arithmatex">\(\vec{E}\)</span></th>
+<th>磁界 <span class="arithmatex">\(\vec{H}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>単位</td>
+<td><span class="arithmatex">\(\text{V/m}\)</span></td>
+<td><span class="arithmatex">\(\text{A/m}\)</span></td>
+</tr>
+<tr>
+<td>源</td>
+<td>電荷 <span class="arithmatex">\(Q\)</span></td>
+<td>電流 <span class="arithmatex">\(I\)</span>・磁極</td>
+</tr>
+<tr>
+<td>力の対象</td>
+<td>静止電荷にも作用</td>
+<td>運動電荷（電流）に作用</td>
+</tr>
+<tr>
+<td>対応する「位置エネルギー」</td>
+<td>電位 <span class="arithmatex">\(V\)</span> [V]</td>
+<td>磁位（電験では主に磁束 <span class="arithmatex">\(\Phi\)</span>）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vs_1">クーロン力 vs 重力<a class="headerlink" href="#vs_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>クーロン力</th>
+<th>重力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>法則</td>
+<td><span class="arithmatex">\(F \propto Q_1 Q_2 / r^2\)</span></td>
+<td><span class="arithmatex">\(F \propto m_1 m_2 / r^2\)</span></td>
+</tr>
+<tr>
+<td>距離依存</td>
+<td>逆二乗</td>
+<td>逆二乗</td>
+</tr>
+<tr>
+<td>向き</td>
+<td>異符号：引力、同符号：斥力</td>
+<td>常に引力</td>
+</tr>
+<tr>
+<td>重ね合わせ</td>
+<td>成立（線形）</td>
+<td>成立</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vs_2">導体 vs 絶縁体（誘電体）の電荷分布<a class="headerlink" href="#vs_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>導体</th>
+<th>絶縁体（誘電体）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静電平衡時の内部電界</td>
+<td><strong>ゼロ</strong></td>
+<td>ゼロでない場合あり</td>
+</tr>
+<tr>
+<td>電荷の分布</td>
+<td><strong>表面のみ</strong></td>
+<td>体積全体に分布可</td>
+</tr>
+<tr>
+<td>内部の電位</td>
+<td><strong>一定</strong>（等電位体）</td>
+<td>位置によって異なる</td>
+</tr>
+<tr>
+<td>比誘電率</td>
+<td>—</td>
+<td><span class="arithmatex">\(\varepsilon_r &gt; 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">電気力線の性質：H29・H23・R05上・R04下・R02など論説問題の頻出テーマ</p>
+<p>電気力線は毎年のように論説・穴埋め形式で出題される。以下の性質を丸ごと覚える。</p>
+<table>
+<thead>
+<tr>
+<th>性質</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>向き</strong></td>
+<td>正電荷から出て負電荷に入る（または無限遠へ出る・から入る）</td>
+</tr>
+<tr>
+<td><strong>交差しない</strong></td>
+<td>電界の向きは各点で唯一。2本の力線が交わることはない</td>
+</tr>
+<tr>
+<td><strong>本数と電荷量</strong></td>
+<td>電荷 <abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> [<abbr title="静電容量 (Capacitance) [F]">C</abbr>] から出る電気力線の総本数 = <span class="arithmatex">\(Q / \varepsilon_0\)</span> 本（真空中）</td>
+</tr>
+<tr>
+<td><strong>等電位面と直交</strong></td>
+<td>電気力線は常に等電位面と垂直に交わる</td>
+</tr>
+<tr>
+<td><strong>密度と電界の強さ</strong></td>
+<td>力線が密な場所ほど電界が強い（力線密度 = 電界の強さ）</td>
+</tr>
+<tr>
+<td><strong>導体表面</strong></td>
+<td>導体表面では電気力線は表面に垂直（接線成分はゼロ）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>試験でよく問われる論点（H23・R05上）</strong>：「電気力線の本数を2倍にすると電界は2倍になるか？」→ なる。電気力線密度 ∝ 電界の強さ E は比例関係。</p>
+<p><strong>H19問3の典型パターン</strong>：ある閉曲面から出る電気力線の本数が <span class="arithmatex">\(N\)</span> 本であれば、内部に含まれる電荷量は <span class="arithmatex">\(Q = N \varepsilon_0\)</span> で求まる。出る力線と入る力線が混在する場合は「正味の本数（出る − 入る）」で計算する。</p>
+</div>
+<hr />
+<h3 id="r07r04h22h20">複数点電荷の合力・釣り合い位置：R07上・R04下・H22・H20で繰り返し出題<a class="headerlink" href="#r07r04h22h20" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">点電荷が複数あるときの合力と「釣り合い位置」の求め方</p>
+<p><strong>合力（ベクトル和）の計算手順</strong>：</p>
+<ol>
+<li>各電荷からのクーロン力 <span class="arithmatex">\(F_i\)</span> の大きさを求める</li>
+<li>各力の向きを座標軸で分解する（x成分・y成分）</li>
+<li>成分ごとに代数和をとり、合ベクトルの大きさと向きを求める</li>
+</ol>
+<p><strong>H20問1（正三角形配置）の典型手順</strong>：3つの電荷が正三角形の頂点に置かれると、各辺方向の力が120°ずつずれる。対称性を利用してx・y成分が打ち消し合うかを確認する。</p>
+<p><strong>「釣り合い位置」の求め方（R07上・R04下・H20問17）</strong>：</p>
+<p>2つの点電荷 <span class="arithmatex">\(Q_1\)</span>（正）と <span class="arithmatex">\(Q_2\)</span>（正）が距離 <span class="arithmatex">\(d\)</span> 離れて固定されているとき、その延長線上に第3の電荷 <span class="arithmatex">\(q\)</span> を置いて釣り合わせる。</p>
+<p>設定：<span class="arithmatex">\(Q_1\)</span> から距離 <span class="arithmatex">\(x\)</span> の点に <span class="arithmatex">\(q\)</span> を置く（<span class="arithmatex">\(Q_2\)</span> からの距離は <span class="arithmatex">\(d - x\)</span>）。</p>
+<div class="arithmatex">\[\frac{Q_1 q}{4\pi\varepsilon_0 x^2} = \frac{Q_2 q}{4\pi\varepsilon_0 (d-x)^2}\]</div>
+<p><span class="arithmatex">\(q\)</span> と <span class="arithmatex">\(4\pi\varepsilon_0\)</span> を消去して整理：</p>
+<div class="arithmatex">\[\frac{Q_1}{x^2} = \frac{Q_2}{(d-x)^2} \implies \frac{\sqrt{Q_1}}{x} = \frac{\sqrt{Q_2}}{d-x}\]</div>
+<div class="arithmatex">\[x = \frac{\sqrt{Q_1}}{\sqrt{Q_1} + \sqrt{Q_2}} \cdot d\]</div>
+<div class="admonition warning">
+<p class="admonition-title">引っかかりやすいポイント</p>
+<ul>
+<li><span class="arithmatex">\(Q_1 = Q_2\)</span> のとき釣り合い位置は中点（<span class="arithmatex">\(x = d/2\)</span>）。当然。</li>
+<li>釣り合い位置は <strong>必ず2つの電荷の間</strong>（同符号の場合）。外側に求まった場合は計算ミスを疑う。</li>
+<li><span class="arithmatex">\(Q_1 \neq Q_2\)</span> のとき、釣り合い位置は<strong>大きい電荷に近い側</strong>ではなく<strong>小さい電荷に近い側</strong>。<span class="arithmatex">\(x\)</span> は <span class="arithmatex">\(\sqrt{Q_1}\)</span> に比例するので大きい電荷側に偏ることに注意。</li>
+</ul>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">電位がゼロとなる点の求め方：H22問1で出題</p>
+<p><strong>異符号の2点電荷</strong>（<span class="arithmatex">\(+Q_1\)</span> と <span class="arithmatex">\(-Q_2\)</span>）がある場合、電位が 0 になる点を求める。</p>
+<p>電位はスカラー（向きなし）なので、各電荷の電位の代数和 = 0 で解く。</p>
+<p><span class="arithmatex">\(+Q_1\)</span> から距離 <span class="arithmatex">\(r_1\)</span>、<span class="arithmatex">\(-Q_2\)</span> から距離 <span class="arithmatex">\(r_2\)</span> の点での電位：</p>
+<div class="arithmatex">\[V = \frac{Q_1}{4\pi\varepsilon_0 r_1} - \frac{Q_2}{4\pi\varepsilon_0 r_2} = 0 \implies \frac{Q_1}{r_1} = \frac{Q_2}{r_2}\]</div>
+<p>異符号の場合、<span class="arithmatex">\(V = 0\)</span> となる点は一般に <strong>2箇所</strong>（内側と外側に1点ずつ）存在する。</p>
+<p><strong>同符号の場合は V = 0 の点が存在しない</strong>（両方正なら V は常に正）。</p>
+</div>
+<h2 id="top3">🕳️ よくある勘違いTOP3<a class="headerlink" href="#top3" title="Permanent link">&para;</a></h2>
+<p><strong>1. 電界の向きを「電子が動く向き」と混同してしまう</strong></p>
+<p>❌ こう思いがち：電子はプラスに引かれるから、電界は−極から+極へ向かう
+✅ 実際は：電界の向きは「+電荷が受ける力の向き」= <mark><strong>+極（高電位）から−極（低電位）へ</strong></mark>。電子の移動方向は逆（−から+へ移動）。電界の向きと電子の移動方向は逆。</p>
+<p><strong>2. 電位の計算で「距離 r」を起点から間違える</strong></p>
+<p>❌ こう思いがち：導線の長さや電極間距離を r として代入する
+✅ 実際は：点電荷の電位公式 <span class="arithmatex">\(V = Q/(4\pi\varepsilon_0 r)\)</span> の <strong>r は点電荷そのものからの距離</strong>。問題文の「電極間距離」ではなく「着目点から電荷までの距離」に注意。</p>
+<p><strong>3. クーロンの法則で <span class="arithmatex">\(\varepsilon_0\)</span> と <span class="arithmatex">\(\varepsilon = \varepsilon_0\varepsilon_r\)</span> を使い分けられない</strong></p>
+<p>❌ こう思いがち：どんな場合でも <span class="arithmatex">\(\varepsilon_0 = 8.85 \times 10^{-12}\)</span> を使えばよい
+✅ 実際は：<mark><strong>誘電体（比誘電率 <span class="arithmatex">\(\varepsilon_r\)</span> の媒質）中では <span class="arithmatex">\(\varepsilon_0\)</span> を <span class="arithmatex">\(\varepsilon_0\varepsilon_r\)</span> に置き換える</strong></mark>。真空・空気中では <span class="arithmatex">\(\varepsilon_r = 1\)</span> なので <span class="arithmatex">\(\varepsilon_0\)</span> のまま使用。問題文に「比誘電率」が出たら必ず確認。</p>
+<div class="admonition note">
+<p class="admonition-title">R03問2 頻出論点：液体誘電体中の静電力</p>
+<p>「絶縁性液体（比誘電率 <span class="arithmatex">\(\varepsilon_r\)</span>）で満たした容器中の2つの小球間に働く静電力はどうなるか？」という論説問題（R03問2）で問われたポイント：</p>
+<ul>
+<li>誘電体（液体）中ではクーロン力は <span class="arithmatex">\(F = \dfrac{Q_1 Q_2}{4\pi\varepsilon_0\varepsilon_r r^2}\)</span></li>
+<li><span class="arithmatex">\(\varepsilon_r &gt; 1\)</span> なので、<strong>真空中より力が弱くなる</strong></li>
+<li>力が <span class="arithmatex">\(1/\varepsilon_r\)</span> 倍に減少する（<span class="arithmatex">\(\varepsilon_r = 2\)</span> なら半分）</li>
+</ul>
+<p>引力・斥力の向きは変わらない。力の<strong>大きさだけ</strong>が変化する点に注意。</p>
+</div>
+<p><strong>4. 電位の重ね合わせをベクトル合成してしまう</strong></p>
+<p>❌ こう思いがち：電界と同じように向きを考えて合成する
+✅ 実際は：<mark>電位 V はスカラー量</mark>。複数の点電荷がある場合、各電荷が作る電位を<strong>符号だけ考慮して代数和（足し算）</strong>すればよい。ベクトル分解は不要。これが仕事の計算を「電界の積分」より「<mark>電位差×電荷量</mark>」で解く方が速い理由。</p>
+<hr />
+<h2 id="vs_3">🧩 正答者 vs 誤答者<a class="headerlink" href="#vs_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>観点</th>
+<th>❌ 誤答者</th>
+<th>✅ 正答者</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電界の向き</td>
+<td>「電子が動く向き」と覚えている</td>
+<td>「正電荷から出て負電荷に入る向き」と覚えている</td>
+</tr>
+<tr>
+<td>クーロンの法則の距離</td>
+<td>表面からの距離を使う</td>
+<td>電荷間の距離（中心間距離）を使う</td>
+</tr>
+<tr>
+<td>誘電体の効果</td>
+<td>εrを無視してε₀だけで計算</td>
+<td>ε = ε₀εrを使い、誘電体の効果を反映する</td>
+</tr>
+<tr>
+<td>電位の重ね合わせ</td>
+<td>ベクトル合成（向きを考慮）する</td>
+<td>スカラー合成（代数和）する</td>
+</tr>
+<tr>
+<td>導体内部の電界</td>
+<td>「導体なら電流が流れるから電界あり」</td>
+<td>「静電平衡の導体内部の電界はゼロ」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">📝 出題実績<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>出典: 電験王3（denken-ou.com）H18〜R07上期の過去問一覧より収集（2026-03-30）
+※ 電磁気（静電界）の中からクーロン力・電界・電位に関する問題を抽出。コンデンサ系は condenser.md を参照。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>問</th>
+<th>形式</th>
+<th>何が問われたか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R07上</td>
+<td>問17</td>
+<td>計算</td>
+<td>導体球間に加わる力及び力が釣り合う位置の導出</td>
+</tr>
+<tr>
+<td>R06下</td>
+<td>問2</td>
+<td>計算</td>
+<td>地球を導体球と見なしたときの静電容量</td>
+</tr>
+<tr>
+<td>R06上</td>
+<td>問2</td>
+<td>計算</td>
+<td>空気中の導体球に帯電できる電荷量</td>
+</tr>
+<tr>
+<td>R05下</td>
+<td>問2</td>
+<td>計算</td>
+<td>帯電した導体球に働く力</td>
+</tr>
+<tr>
+<td>R05上</td>
+<td>問2</td>
+<td>論説</td>
+<td>静電界における電気力線の特徴</td>
+</tr>
+<tr>
+<td>R04下</td>
+<td>問1</td>
+<td>計算</td>
+<td>電気力線の特徴からの電気量の導出</td>
+</tr>
+<tr>
+<td>R04下</td>
+<td>問2</td>
+<td>計算</td>
+<td>平行平板コンデンサ内の電気力線の特徴と導体球の電位</td>
+</tr>
+<tr>
+<td>R04下</td>
+<td>問17</td>
+<td>計算</td>
+<td>導体球間に加わる力及び力が釣り合う位置の導出</td>
+</tr>
+<tr>
+<td>R04上</td>
+<td>問2</td>
+<td>計算</td>
+<td>クーロンの法則による点電荷に加わる力の導出</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>問2</td>
+<td>論説</td>
+<td>絶縁体の液体で満たしたときの小球間に働く静電力</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>問1</td>
+<td>計算</td>
+<td>点電荷に加わるエネルギーによる電位の変化</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>問2</td>
+<td>論説</td>
+<td>十分に長い導体円柱の電気力線の様子</td>
+</tr>
+<tr>
+<td>R01</td>
+<td>問1</td>
+<td>計算</td>
+<td>点電荷がつくる電位差の導出</td>
+</tr>
+<tr>
+<td>R01</td>
+<td>問15</td>
+<td>計算</td>
+<td>静電界における電気力線及び仕事量</td>
+</tr>
+<tr>
+<td>H30</td>
+<td>問1</td>
+<td>計算</td>
+<td>帯電した導体球に関する計算</td>
+</tr>
+<tr>
+<td>H29</td>
+<td>問1</td>
+<td>論説</td>
+<td>電気力線に関する論説</td>
+</tr>
+<tr>
+<td>H28</td>
+<td>問1</td>
+<td>計算</td>
+<td>点電荷の等電位面</td>
+</tr>
+<tr>
+<td>H26</td>
+<td>問2</td>
+<td>穴埋</td>
+<td>静電気に関する空欄穴埋</td>
+</tr>
+<tr>
+<td>H26</td>
+<td>問17</td>
+<td>計算</td>
+<td>真空中の電荷に働く力</td>
+</tr>
+<tr>
+<td>H25</td>
+<td>問2</td>
+<td>計算</td>
+<td>クーロンの法則</td>
+</tr>
+<tr>
+<td>H25</td>
+<td>問17</td>
+<td>計算</td>
+<td>空気中の電荷を帯びた金属球</td>
+</tr>
+<tr>
+<td>H23</td>
+<td>問1</td>
+<td>論説</td>
+<td>静電界における電気力線や電界・電荷に関する論説</td>
+</tr>
+<tr>
+<td>H22</td>
+<td>問1</td>
+<td>計算</td>
+<td>正負の点電荷を置いたとき電位が零となる点の特定</td>
+</tr>
+<tr>
+<td>H22</td>
+<td>問17</td>
+<td>計算</td>
+<td>正三角形上に置かれた点電荷に働く力</td>
+</tr>
+<tr>
+<td>H20</td>
+<td>問1</td>
+<td>計算</td>
+<td>正三角形上に配置された複数の点電荷による合成電界</td>
+</tr>
+<tr>
+<td>H20</td>
+<td>問17</td>
+<td>計算</td>
+<td>導体球間に加わる力及び力が釣り合う位置の導出</td>
+</tr>
+<tr>
+<td>H19</td>
+<td>問3</td>
+<td>計算</td>
+<td>電気力線の特徴からの未知の電荷の導出</td>
+</tr>
+<tr>
+<td>H18</td>
+<td>問1</td>
+<td>計算</td>
+<td>非常に大きな導体球の静電容量</td>
+</tr>
+</tbody>
+</table>
+<p>→ 出題頻度: ★★★★（毎年度1〜2問、問1・問2から出題）</p>
+<hr />
+<details class="example">
+<summary>確認問題</summary>
+<p><strong>問題</strong>: 真空中で2μCと3μCの点電荷が1m離れている。クーロン力の大きさを求めよ。（k=9×10⁹ N·m²/C²）</p>
+<details class="success">
+<summary>解答</summary>
+<p><strong>答え</strong>: F = k×Q1×Q2/r² = 9×10⁹×2×10⁻⁶×3×10⁻⁶/1² = 0.054N
+<strong>ポイント</strong>: クーロンの法則 F=kQ1Q2/r²。同符号→斥力、異符号→引力</p>
+</details>
+</details>
+<details class="note">
+<summary>Level 2: 数学的背景 🔬</summary>
+<p><strong>ガウスの法則と電界の発散</strong></p>
+<p>クーロンの法則をベクトル微積分で一般化したものがガウスの法則：
+[ \oint_S \vec{E} \cdot d\vec{<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>} = \frac{Q_{enc}}{\varepsilon_0} ]
+閉曲面を貫く電束（電界×面積）= 内部電荷 / 真空誘電率。</p>
+<p>点電荷の電界 <span class="arithmatex">\( E = Q/(4\pi\varepsilon_0 r^2) \)</span> はガウスの法則から直接導出できる（半径rの球面に適用）。電験3種では公式として使うが、ガウスの法則が本質的な出発点。</p>
+</details>
+<details class="info">
+<summary>Level 3: 実務との接点 🏭</summary>
+<p>高電圧機器（変圧器・ケーブル）の電界分布設計に使う。絶縁破壊は電界集中点（角・曲面）で発生するため、電界を均一化する設計（シールド電極、テーパー形状）が重要。</p>
+</details>
+<hr />
+<h2 id="_6">🛡️ 静電遮蔽（静電シールド）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">静電遮蔽の原理<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><mark>導体の内部電界はゼロ</mark>（静電平衡状態）</li>
+<li>導体で囲まれた空洞内部の電界も、<strong>空洞内に電荷がなければゼロ</strong></li>
+<li>外部の電界・帯電体の影響が空洞内部に及ばない → これが「静電遮蔽」</li>
+</ul>
+<h3 id="_8">静電遮蔽のメカニズム（図解的説明）<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li>外部に電界をかける → 導体外表面に電荷が誘導される</li>
+<li>誘導電荷が外部電界を完全に打ち消す方向の電界を作る</li>
+<li>結果として、空洞内部の電界 = 0</li>
+</ol>
+<h3 id="_9">空洞内に電荷を置いた場合<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>空洞内に正電荷 +<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> を置くと：</p>
+<ul>
+<li>空洞内側の導体表面に <strong>−<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr></strong> が誘導される</li>
+<li>外側表面に <strong>+<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr></strong> が現れる（外部には電界が及ぶ）</li>
+</ul>
+<p>→ 空洞内の帯電体の影響は<strong>外部には漏れる</strong></p>
+<h3 id="_10">接地による完全遮蔽<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>導体を接地（アース）すると、外側表面の +<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> が大地へ逃げる</li>
+<li>結果：<strong>外部への電界が完全にゼロ</strong> → 完全な静電遮蔽</li>
+<li>※内側の −<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> は内部の +<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> と引き合っているので動かない</li>
+</ul>
+<h3 id="_11">比較表：遮蔽の条件まとめ<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>状況</th>
+<th>空洞内の電界</th>
+<th>外部への電界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>導体に囲まれた空洞（空洞内電荷なし）</td>
+<td><strong>ゼロ</strong></td>
+<td>外部電界による誘導あり</td>
+</tr>
+<tr>
+<td>空洞内に電荷 +<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr>（接地なし）</td>
+<td>+<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> の影響あり</td>
+<td>外側表面の +<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> による電界あり</td>
+</tr>
+<tr>
+<td>空洞内に電荷 +<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr>（導体を接地）</td>
+<td>+<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> の影響あり</td>
+<td><strong>ゼロ</strong>（外部遮蔽完成）</td>
+</tr>
+<tr>
+<td>導体球の内部（電荷なし）</td>
+<td><strong>ゼロ</strong></td>
+<td>外部電界を受けて表面に誘導電荷</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">よくある勘違い<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>❌「導体シールドは電流を流すから電界を打ち消せる」</li>
+<li>
+<p>✅ 静電遮蔽は電流ではなく<strong>電荷の再分布（静電誘導）</strong>によるもの。静電平衡状態で成立</p>
+</li>
+<li>
+<p>❌「接地しなくても外部への電界は遮蔽できる」</p>
+</li>
+<li>✅ 空洞内に電荷がある場合、接地しないと外表面に電荷が現れ外部に電界が漏れる</li>
+</ul>
+<details class="info">
+<summary>Level 3: 実務との接点 🏭</summary>
+<ul>
+<li>計測器・精密機器の電磁シールド設計の基礎</li>
+<li>金属筐体（金属ケース）による静電遮蔽：外部静電界から内部回路を守る</li>
+<li>※ 磁気シールドは別概念（強磁性体を使う）</li>
+</ul>
+</details>
+<details class="note">
+<summary>関連トピック 🔗</summary>
+<p><strong>導体球の静電容量への接続</strong>（<code>condenser.md</code> の球形コンデンサと連携）</p>
+<ul>
+<li>「導体球を接地したとき」の議論は静電遮蔽と密接に関連</li>
+<li>接地した導体球：表面の電位 = 0、外部の電界分布が変わる</li>
+</ul>
+</details>
+<hr />
+<p><em>最終確認: 2026-04-02 | ステータス: v0.8（出題実績ベースの解説補強済み：電気力線・仕事・釣り合い位置・電位ゼロ点・孤立導体球C・誘電体中静電力） | <a href="../../reference/versioning/">バージョニング基準</a></em></p>
+<!-- 略語ツールチップ定義 — 電験3種 理論Wiki -->
+<!-- pymdownx.snippets の auto_append で全ページに自動適用 -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Furutachi — 個人学習用
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/kfurufuru/denken-wiki-riron" target="_blank" rel="noopener" title="GitHub リポジトリ" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.path", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

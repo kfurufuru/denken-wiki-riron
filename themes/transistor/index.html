@@ -1,0 +1,3138 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="電験3種 理論 — 公式×直感×過去問クロスリファレンス">
+      
+      
+        <meta name="author" content="Furutachi">
+      
+      
+        <link rel="canonical" href="https://kfurufuru.github.io/denken-wiki-riron/themes/transistor/">
+      
+      
+        <link rel="prev" href="../handotai/">
+      
+      
+        <link rel="next" href="../opamp/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>トランジスタ・FET - 電験3種 理論Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fet" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://kfurufuru.github.io/denken-wiki/"
+     style="font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
+    📗 法規Wiki へ移動
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="電験3種 理論Wiki" class="md-header__button md-logo" aria-label="電験3種 理論Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            電験3種 理論Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              トランジスタ・FET
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kfurufuru/denken-wiki-riron" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    denken-wiki-riron
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../roadmap/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  学習ロードマップ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  テーマ別
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../kakomon/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  過去問マッピング
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  リファレンス
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="電験3種 理論Wiki" class="md-nav__button md-logo" aria-label="電験3種 理論Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    電験3種 理論Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kfurufuru/denken-wiki-riron" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    denken-wiki-riron
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../roadmap/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    学習ロードマップ
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    学習ロードマップ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/beginner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初学者パス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/by-weakness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    過去問逆引き
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/last-minute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直前確認パス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    テーマ別
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    テーマ別
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電気回路
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電気回路
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chokuryu-kairo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直流回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kouryu-kiso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    交流回路基礎
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rlc-kairo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RLC回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kouryu-denryoku/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    交流電力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sansou-kouryu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    三相交流
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kato-gensho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    過渡現象
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電磁気
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電磁気
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seidenki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    静電気
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../condenser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    コンデンサ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../denjiryoku/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電磁力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jiki-kairo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    磁気回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inductance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インダクタンス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電子理論
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電子理論
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handotai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    半導体
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    トランジスタ・FET
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    トランジスタ・FET
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 直感的理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 公式の意味マップ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーA：基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーB：応用変換
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 比較表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 比較表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bjtvs-fet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バイポーラトランジスタ（BJT）vs FET
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npn-vs-pnp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NPN型 vs PNP型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エミッタ接地 vs ベース接地 vs コレクタ接地
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r0418r0418" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        電流帰還バイアス回路（自己バイアス回路）：R04下問18・R04上問18で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetr0518r0313h2418h2113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FET増幅回路（ソース接地）：R05下問18・R03問13・H24問18・H21問13で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r0113h1818" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        負帰還増幅回路：R01問13・H18問18で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r0413r0318h1813" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発振回路の発振条件（バルクハウゼン条件）：R04下問13・R03問18・H18問13で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🕳️ よくある勘違いTOP3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 解法フローチャート
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 出題実績
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../opamp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    オペアンプ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電気計測
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    電気計測
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    計器の原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ブリッジ回路
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../kakomon/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    過去問マッピング
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    過去問マッピング
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kakomon/by-year/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    年度別一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kakomon/by-field/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分野別一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kakomon/reuse-ranking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    再出題ランキング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    リファレンス
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    リファレンス
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/formulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頻出公式一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/units/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    単位・次元チェック表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/math-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数学の道具箱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/circuit-patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回路パターン集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/emoji-legend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    絵文字マーカー凡例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    バージョニング基準
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 直感的理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 公式の意味マップ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーA：基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイヤーB：応用変換
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 比較表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 比較表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bjtvs-fet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バイポーラトランジスタ（BJT）vs FET
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npn-vs-pnp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NPN型 vs PNP型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エミッタ接地 vs ベース接地 vs コレクタ接地
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r0418r0418" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        電流帰還バイアス回路（自己バイアス回路）：R04下問18・R04上問18で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetr0518r0313h2418h2113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FET増幅回路（ソース接地）：R05下問18・R03問13・H24問18・H21問13で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r0113h1818" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        負帰還増幅回路：R01問13・H18問18で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#r0413r0318h1813" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発振回路の発振条件（バルクハウゼン条件）：R04下問13・R03問18・H18問13で出題
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🕳️ よくある勘違いTOP3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 解法フローチャート
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 出題実績
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="ナビゲーション" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    テーマ別
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../handotai/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    電子理論
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">トランジスタ</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">中頻度</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">電子理論</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="fet">🔌 トランジスタ・<abbr title="電界効果トランジスタ (Field Effect Transistor)">FET</abbr><a class="headerlink" href="#fet" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>トランジスタは「小さい信号で大きな電流を制御するスイッチ兼増幅器」。蛇口のバルブのように、わずかな力（ベース電流）で大きな流れ（コレクタ電流）を制御する。</p>
+</blockquote>
+<h2 id="_1">🧠 直感的理解<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><mark>バイポーラトランジスタ（<abbr title="バイポーラトランジスタ (Bipolar Junction Transistor)">BJT</abbr>）は「電流で電流を制御」する</mark>。ベース電流 <span class="arithmatex">\(I_B\)</span> が小さくても、<span class="arithmatex">\(h_{FE}\)</span> 倍に増幅されたコレクタ電流 <span class="arithmatex">\(I_C\)</span> が流れる。蛇口のバルブ（少ない力で大流量を制御）そのもの。</li>
+<li><mark>FETは「電圧で電流を制御」する</mark>。ゲートに電圧を加えるだけで電流路（チャネル）を制御できるため、入力電流がほぼゼロ。BJTとFETは制御方式が根本的に異なる。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">5秒で思い出す</p>
+<p><abbr title="バイポーラトランジスタ (Bipolar Junction Transistor)">BJT</abbr> ＝ 電流で制御（ベース電流が蛇口ハンドル）。<abbr title="電界効果トランジスタ (Field Effect Transistor)">FET</abbr> ＝ 電圧で制御（ゲート電圧が磁石）。</p>
+</div>
+<h2 id="_2">🔍 公式の意味マップ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="a">レイヤーA：基本概念<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>意味（日本語）</th>
+<th>使える条件</th>
+<th>使えない条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$<span class="arithmatex">\(h_{FE} = \dfrac{I_C}{I_B}\)</span>$</td>
+<td>電流増幅率：ベース電流の何倍のコレクタ電流が流れるか</td>
+<td>アクティブ領域（増幅動作）</td>
+<td>飽和領域・遮断領域では成立しない</td>
+</tr>
+<tr>
+<td>$<span class="arithmatex">\(I_E = I_B + I_C\)</span>$</td>
+<td>キルヒホッフの電流則：3端子の電流収支</td>
+<td>常に成立（BJT全動作領域）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$<span class="arithmatex">\(P_C = V_{CE} \times I_C \text{ [W]}\)</span>$</td>
+<td>コレクタ損失：トランジスタの発熱量。最大定格以内に保つ必要がある</td>
+<td>定常動作時</td>
+<td>スイッチング過渡時は瞬時値で評価</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b">レイヤーB：応用変換<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>公式/手法</th>
+<th>意味</th>
+<th>使える条件</th>
+<th>使えない条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$<span class="arithmatex">\(A_v \approx -h_{FE} \cdot \dfrac{R_C}{h_{ie}}\)</span>$</td>
+<td><mark>エミッタ接地増幅回路の電圧利得（概念）</mark></td>
+<td>小信号等価回路での近似</td>
+<td>大信号動作・非線形領域では不適</td>
+</tr>
+<tr>
+<td>バイアス設計（動作点設定）</td>
+<td>直流動作点（Q点）をアクティブ領域の中心に設定し、信号を歪みなく増幅させる</td>
+<td>増幅回路設計</td>
+<td>スイッチング用途では飽和・遮断の2点動作</td>
+</tr>
+<tr>
+<td>FET特性：<span class="arithmatex">\(I_D\)</span> vs <span class="arithmatex">\(V_{GS}\)</span></td>
+<td>ゲート・ソース間電圧 <span class="arithmatex">\(V_{GS}\)</span> でドレイン電流 <span class="arithmatex">\(I_D\)</span> を制御。入力電流≈ゼロ</td>
+<td>MOSFETの基本動作</td>
+<td>BJTと混同した回路解析は誤り</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">📊 比較表<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="bjtvs-fet">バイポーラトランジスタ（<abbr title="バイポーラトランジスタ (Bipolar Junction Transistor)">BJT</abbr>）vs <abbr title="電界効果トランジスタ (Field Effect Transistor)">FET</abbr><a class="headerlink" href="#bjtvs-fet" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th><abbr title="バイポーラトランジスタ (Bipolar Junction Transistor)">BJT</abbr>（バイポーラ）</th>
+<th><abbr title="電界効果トランジスタ (Field Effect Transistor)">FET</abbr>（電界効果型）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>制御方式</td>
+<td>電流制御（ベース電流）</td>
+<td>電圧制御（ゲート電圧）</td>
+</tr>
+<tr>
+<td>入力インピーダンス</td>
+<td>低い（<span class="arithmatex">\(h_{ie}\)</span> 数百Ω〜数kΩ）</td>
+<td>非常に高い（MOSFETは≈∞）</td>
+</tr>
+<tr>
+<td>キャリア</td>
+<td>電子＋正孔（両方使う ＝ バイポーラ）</td>
+<td>電子または正孔（片方のみ ＝ ユニポーラ）</td>
+</tr>
+<tr>
+<td>主な用途</td>
+<td>高速スイッチング・線形増幅</td>
+<td>低消費電力・VLSI・高インピーダンス入力</td>
+</tr>
+<tr>
+<td>代表例</td>
+<td>2SC1815など</td>
+<td><abbr title="金属酸化膜半導体FET (Metal-Oxide-Semiconductor FET)">MOSFET</abbr>（CMOS、パワーMOS）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="npn-vs-pnp">NPN型 vs PNP型<a class="headerlink" href="#npn-vs-pnp" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>NPN型</th>
+<th>PNP型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>構造</td>
+<td>N-P-N のサンドイッチ</td>
+<td>P-N-P のサンドイッチ</td>
+</tr>
+<tr>
+<td>動作電流の向き</td>
+<td>コレクタ→エミッタ方向（電子の流れは逆）</td>
+<td>エミッタ→コレクタ方向</td>
+</tr>
+<tr>
+<td>バイアスの極性</td>
+<td><span class="arithmatex">\(V_{CE} &gt; 0\)</span>、<span class="arithmatex">\(V_{BE} \approx +0.6\)</span> V</td>
+<td><span class="arithmatex">\(V_{EC} &gt; 0\)</span>、<span class="arithmatex">\(V_{EB} \approx +0.6\)</span> V</td>
+</tr>
+<tr>
+<td>電源の使い方</td>
+<td><span class="arithmatex">\(+V_{CC}\)</span> から負荷を通してコレクタへ</td>
+<td>エミッタが高電位側</td>
+</tr>
+<tr>
+<td>回路図の記号</td>
+<td>エミッタの矢印が外向き（<abbr title="N型-P型-N型の3層構造バイポーラトランジスタ">NPN</abbr> → 電流が出る）</td>
+<td>エミッタの矢印が内向き（<abbr title="P型-N型-P型の3層構造バイポーラトランジスタ">PNP</abbr> → 電流が入る）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vs-vs">エミッタ接地 vs ベース接地 vs コレクタ接地<a class="headerlink" href="#vs-vs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>エミッタ接地</th>
+<th>ベース接地</th>
+<th>コレクタ接地（エミッタフォロワ）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入力端子</td>
+<td>ベース</td>
+<td>エミッタ</td>
+<td>ベース</td>
+</tr>
+<tr>
+<td>出力端子</td>
+<td>コレクタ</td>
+<td>コレクタ</td>
+<td>エミッタ</td>
+</tr>
+<tr>
+<td>電圧利得</td>
+<td>大（反転）</td>
+<td>大（非反転）</td>
+<td>≈1（非反転）</td>
+</tr>
+<tr>
+<td>電流利得</td>
+<td>大（<span class="arithmatex">\(h_{FE}\)</span>倍）</td>
+<td>≈1</td>
+<td>大</td>
+</tr>
+<tr>
+<td>入力インピーダンス</td>
+<td>中程度</td>
+<td>低い</td>
+<td>高い</td>
+</tr>
+<tr>
+<td>主な用途</td>
+<td>汎用増幅</td>
+<td>高周波増幅</td>
+<td>インピーダンス変換</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">コレクタ接地（エミッタフォロワ）の計算：R07上問18・H30問16で出題</p>
+<p>エミッタフォロワは「電圧利得がほぼ1、電流利得が大きい」回路。出力はエミッタから取り出す。</p>
+<p><strong>直流動作点の計算手順</strong>：</p>
+<ol>
+<li><span class="arithmatex">\(V_{BE} \approx 0.6\)</span> V（シリコントランジスタ）</li>
+<li>ベース電圧 <span class="arithmatex">\(V_B\)</span> を求める（分圧バイアスなら <span class="arithmatex">\(V_B = V_{CC} \cdot R_2 / (R_1 + R_2)\)</span>）</li>
+<li>エミッタ電圧 <span class="arithmatex">\(V_E = V_B - V_{BE}\)</span></li>
+<li>エミッタ電流 <span class="arithmatex">\(I_E = V_E / R_E\)</span>（<span class="arithmatex">\(\approx I_C\)</span>）</li>
+<li>コレクタ・エミッタ間電圧 <span class="arithmatex">\(V_{CE} = V_{CC} - V_E\)</span>（コレクタ側に抵抗なし）</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">引っかかりやすいポイント</p>
+<p>コレクタ接地では<strong>コレクタ側に負荷抵抗がない</strong>。<span class="arithmatex">\(V_{CE} = V_{CC} - I_E R_E\)</span> の形になる。エミッタ接地と同じ式を使おうとすると間違える。</p>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">縦続接続増幅器の電圧利得：R05下問13で出題</p>
+<p>複数の増幅段を直列につなぐ（縦続接続）と、全体の電圧利得は各段の利得の<strong>積</strong>になる。</p>
+<div class="arithmatex">\[A_{v\text{total}} = A_{v1} \times A_{v2} \times \cdots\]</div>
+<p>dB表示の場合は<strong>和</strong>になる：</p>
+<div class="arithmatex">\[A_{v\text{total}}[\text{dB}] = A_{v1}[\text{dB}] + A_{v2}[\text{dB}] + \cdots\]</div>
+<p><strong>典型問題パターン</strong>：「2段増幅回路で各段の電圧利得が20倍のとき、全体の電圧利得は？」→ <span class="arithmatex">\(20 \times 20 = 400\)</span> 倍（または <span class="arithmatex">\(26\text{ dB} + 26\text{ dB} = 52\text{ dB}\)</span>）。</p>
+<p><strong>注意</strong>：電流利得・電力利得も同様に積になる。</p>
+</div>
+<h3 id="r0418r0418">電流帰還バイアス回路（自己バイアス回路）：R04下問18・R04上問18で出題<a class="headerlink" href="#r0418r0418" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">電流帰還バイアス回路の計算手順</p>
+<p>エミッタに抵抗 <span class="arithmatex">\(R_E\)</span> を入れて動作点を安定化させる回路。4つの抵抗（<span class="arithmatex">\(R_1, R_2, R_C, R_E\)</span>）とトランジスタで構成される。</p>
+<p><strong>計算手順（試験の標準アプローチ）</strong>：</p>
+<ol>
+<li>
+<p><strong>ベース電圧を分圧式で求める</strong>（<span class="arithmatex">\(R_1, R_2\)</span> の分圧）
+   $<span class="arithmatex">\(V_B = V_{CC} \cdot \frac{R_2}{R_1 + R_2}\)</span>$</p>
+</li>
+<li>
+<p><strong>エミッタ電圧を求める</strong>
+   $<span class="arithmatex">\(V_E = V_B - V_{BE} \approx V_B - 0.6 \text{ [V]}\)</span>$</p>
+</li>
+<li>
+<p><strong>エミッタ電流（≈コレクタ電流）を求める</strong>
+   $<span class="arithmatex">\(I_C \approx I_E = \frac{V_E}{R_E}\)</span>$</p>
+</li>
+<li>
+<p><strong>コレクタ電圧・VCEを求める</strong>
+   $<span class="arithmatex">\(V_C = V_{CC} - I_C R_C\)</span>$
+   $<span class="arithmatex">\(V_{CE} = V_C - V_E = V_{CC} - I_C(R_C + R_E)\)</span>$</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">前提条件の確認</p>
+<p>分圧バイアスの近似式 <span class="arithmatex">\(V_B = V_{CC} \cdot R_2/(R_1 + R_2)\)</span> は「<span class="arithmatex">\(R_1, R_2\)</span> を流れる電流 <span class="arithmatex">\(\gg I_B\)</span>」のときに成立する。問題文に「<span class="arithmatex">\(h_{FE}\)</span> が十分大きい」または「<span class="arithmatex">\(I_B\)</span> を無視できる」と書かれていれば近似を使ってよい。</p>
+</div>
+<p><strong>「自己バイアス（電流帰還）の安定化効果」</strong>：<mark><span class="arithmatex">\(I_C\)</span> が増加 → <span class="arithmatex">\(V_E\)</span> 上昇 → <span class="arithmatex">\(V_{BE}\)</span> 減少 → <span class="arithmatex">\(I_B\)</span> 減少 → <span class="arithmatex">\(I_C\)</span> 減少</mark>、という負帰還ループで動作点が安定化する。論説問題でこのメカニズムを問われることがある。</p>
+</div>
+<h3 id="fetr0518r0313h2418h2113">FET増幅回路（ソース接地）：R05下問18・R03問13・H24問18・H21問13で出題<a class="headerlink" href="#fetr0518r0313h2418h2113" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title"><abbr title="電界効果トランジスタ (Field Effect Transistor)">FET</abbr>（接合形FET・<abbr title="金属酸化膜半導体FET (Metal-Oxide-Semiconductor FET)">MOSFET</abbr>）増幅回路の計算</p>
+<p>FETはBJTと異なり「電圧制御」デバイス。ソース接地が基本構成。</p>
+<p><strong>基本パラメータ</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>パラメータ</th>
+<th>記号</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>相互コンダクタンス</td>
+<td><span class="arithmatex">\(g_m\)</span> [<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>]</td>
+<td><span class="arithmatex">\(V_{GS}\)</span> の変化に対する <span class="arithmatex">\(I_D\)</span> の変化率。<span class="arithmatex">\(g_m = \Delta I_D / \Delta V_{GS}\)</span></td>
+</tr>
+<tr>
+<td>ドレイン抵抗</td>
+<td><span class="arithmatex">\(r_d\)</span> [Ω]</td>
+<td>ドレイン・ソース間の内部抵抗</td>
+</tr>
+<tr>
+<td>ドレイン電流</td>
+<td><span class="arithmatex">\(I_D\)</span> [A]</td>
+<td>ゲート電圧で制御される出力電流</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ソース接地の電圧利得</strong>：<mark>（相互コンダクタンス <span class="arithmatex">\(g_m\)</span> × ドレイン抵抗 <span class="arithmatex">\(R_D\)</span>）</mark></p>
+<div class="arithmatex">\[A_v = -g_m R_D\]</div>
+<p>（<span class="arithmatex">\(r_d \gg R_D\)</span> の場合の近似。<span class="arithmatex">\(r_d\)</span> が与えられた場合は <span class="arithmatex">\(A_v = -g_m (R_D \| r_d)\)</span>）</p>
+<p><strong>直流動作点の計算（ソース自己バイアス）</strong>：</p>
+<ol>
+<li>ゲート電流 ≈ 0 → <span class="arithmatex">\(V_G \approx 0\)</span> V（ゲートに抵抗 <span class="arithmatex">\(R_G\)</span> があっても電圧降下なし）</li>
+<li><span class="arithmatex">\(V_{GS} = V_G - V_S = 0 - I_D R_S = -I_D R_S\)</span></li>
+<li><span class="arithmatex">\(I_D\)</span> と <span class="arithmatex">\(V_{GS}\)</span> の関係式（特性曲線）に代入して <span class="arithmatex">\(I_D\)</span> を求める</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">BJTとの違いに注意</p>
+<ul>
+<li>FETは <span class="arithmatex">\(V_{BE} \approx 0.6\)</span> V のような固定値がない。<span class="arithmatex">\(V_{GS}\)</span> は動作点によって変わる。</li>
+<li><span class="arithmatex">\(I_G \approx 0\)</span> なので、ゲート抵抗 <span class="arithmatex">\(R_G\)</span> があっても電圧降下はゼロ（BJTのベース抵抗の感覚で <span class="arithmatex">\(V_G = V_{CC} \cdot R_G/(R_G + ...)\)</span> としないこと）。</li>
+</ul>
+</div>
+</div>
+<h3 id="r0113h1818">負帰還増幅回路：R01問13・H18問18で出題<a class="headerlink" href="#r0113h1818" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">負帰還増幅の特性と計算</p>
+<p>出力の一部を入力に戻して（帰還）、増幅率を意図的に下げる代わりに安定性を高める回路。</p>
+<p><strong>負帰還をかけたときの電圧利得</strong>：</p>
+<p>帰還なしの開ループ利得を <span class="arithmatex">\(A\)</span>、帰還率を <span class="arithmatex">\(\beta_f\)</span>（0〜1）とすると：</p>
+<div class="arithmatex">\[A_f = \frac{A}{1 + A\beta_f}\]</div>
+<p><span class="arithmatex">\(A\beta_f \gg 1\)</span>（深い負帰還）のとき：</p>
+<div class="arithmatex">\[A_f \approx \frac{1}{\beta_f}\]</div>
+<p><strong>負帰還の効果（論説問題の頻出論点）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>変化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電圧利得</td>
+<td><mark>小さくなる（<span class="arithmatex">\(1/(1+A\beta_f)\)</span> 倍）</mark></td>
+</tr>
+<tr>
+<td>帯域幅（周波数帯域）</td>
+<td><mark>広くなる（<span class="arithmatex">\(1+A\beta_f\)</span> 倍）</mark></td>
+</tr>
+<tr>
+<td>非線形歪み</td>
+<td>小さくなる</td>
+</tr>
+<tr>
+<td>入力インピーダンス（直列帰還）</td>
+<td>大きくなる</td>
+</tr>
+<tr>
+<td>出力インピーダンス（電圧帰還）</td>
+<td>小さくなる</td>
+</tr>
+<tr>
+<td>動作の安定性</td>
+<td>向上する</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">試験の鉄則</p>
+<p>「負帰還をかけると利得は下がるが、他の特性は改善される」が基本メッセージ。<mark>利得と帯域幅の積（利得帯域幅積）は一定に保たれる。</mark></p>
+</div>
+</div>
+<h3 id="r0413r0318h1813">発振回路の発振条件（バルクハウゼン条件）：R04下問13・R03問18・H18問13で出題<a class="headerlink" href="#r0413r0318h1813" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">発振回路の条件と種類</p>
+<p>発振回路は「負帰還増幅の帰還率を正帰還にして、自励振動を起こす」回路。</p>
+<p><strong>バルクハウゼン条件（発振が持続する条件）</strong>：</p>
+<div class="arithmatex">\[A\beta_f = 1 \quad \text{かつ} \quad \angle(A\beta_f) = 0°（または360°の整数倍）\]</div>
+<p>すなわち：<mark>「ループ利得の大きさが1、位相シフトが0°（正帰還になっている）」</mark></p>
+<p><strong>試験に出る発振回路の種類と特徴</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>種類</th>
+<th>発振周波数</th>
+<th>特徴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RC発振回路（位相シフト形）</td>
+<td><span class="arithmatex">\(f_0 = \dfrac{1}{2\pi\sqrt{6}RC}\)</span></td>
+<td>3段のRCで180°位相シフト</td>
+</tr>
+<tr>
+<td>LC発振回路（コルピッツ・ハートレー）</td>
+<td><span class="arithmatex">\(f_0 = \dfrac{1}{2\pi\sqrt{LC}}\)</span></td>
+<td>高周波向き、安定性が高い</td>
+</tr>
+<tr>
+<td>水晶発振回路</td>
+<td>水晶の共振周波数</td>
+<td>最高精度の周波数安定性</td>
+</tr>
+</tbody>
+</table>
+<p><strong>電験3種の出題パターン（R04下問13）</strong>：
+「発振条件を満たすために必要な増幅度はいくらか？」→ 帰還回路の減衰量を計算し、その逆数が最低必要増幅度。<mark>RC位相シフト発振では帰還率 <span class="arithmatex">\(\beta_f = 1/29\)</span>（3段RC回路）なので、増幅度 <span class="arithmatex">\(A \geq 29\)</span> が必要。</mark></p>
+<div class="admonition warning">
+<p class="admonition-title">「発振条件 = 不安定な条件」ではない</p>
+<p>発振回路は設計として正帰還ループを作る。「<span class="arithmatex">\(A\beta_f = 1\)</span> を満たす周波数だけ発振する」のがポイント。それ以外の周波数では <span class="arithmatex">\(A\beta_f &lt; 1\)</span> になり発振しない。</p>
+</div>
+</div>
+<h2 id="top3">🕳️ よくある勘違いTOP3<a class="headerlink" href="#top3" title="Permanent link">&para;</a></h2>
+<p><strong>❌ こう思いがち①</strong>: <span class="arithmatex">\(h_{FE}\)</span>（電流増幅率）が大きいほど、電圧利得も自動的に大きくなる
+<strong>✅ 実際は</strong>: 電圧利得は <span class="arithmatex">\(h_{FE}\)</span> だけでなく負荷抵抗 <span class="arithmatex">\(R_C\)</span> と内部インピーダンス <span class="arithmatex">\(h_{ie}\)</span> の比にも依存する。「<span class="arithmatex">\(h_{FE}\)</span> が大きい ＝ 何でも増幅できる」は誤り。電流増幅率と電圧増幅率は別物。</p>
+<hr />
+<p><strong>❌ こう思いがち②</strong>: <span class="arithmatex">\(I_E = I_B + I_C\)</span> を忘れて、3端子で電流計算を誤る
+<strong>✅ 実際は</strong>: エミッタ電流は必ずベースとコレクタの和。<span class="arithmatex">\(I_C \gg I_B\)</span> なので近似で <span class="arithmatex">\(I_E \approx I_C\)</span> としがちだが、精密計算ではズレが出る。キルヒホッフの電流則は常に成立する。</p>
+<hr />
+<p><strong>❌ こう思いがち③</strong>: FETもBJTと同じように「入力電流でバイアスを考える」
+<strong>✅ 実際は</strong>: MOSFETのゲート入力インピーダンスは理想的には無限大（実際は静電容量による影響のみ）。入力電流はほぼゼロなので、BJTのベース電流を考えるような設計は不要。ゲート電圧 <span class="arithmatex">\(V_{GS}\)</span> だけに着目する。</p>
+<hr />
+<p><strong>❌ こう思いがち④</strong>: 負帰還をかけると「利得も安定性も向上する」</p>
+<p><strong>✅ 実際は</strong>: 負帰還は<strong>利得を犠牲にして安定性・帯域幅・歪み低減を得る</strong>トレードオフ。「利得が下がった分だけ帯域幅が広がる（利得帯域幅積が一定）」が正しい理解。R01問13・H18問18で問われた視点。</p>
+<hr />
+<p><strong>❌ こう思いがち⑤</strong>: 発振回路は「増幅回路が壊れて起きる偶発的な現象」</p>
+<p><strong>✅ 実際は</strong>: 発振回路は正帰還ループを<strong>意図的に設計</strong>する。バルクハウゼン条件（<span class="arithmatex">\(A\beta_f = 1\)</span>、位相0°）を満たす周波数でのみ発振し、それ以外の周波数では発振しない。「増幅度が小さすぎると発振しない（減衰振動）、大きすぎると波形が歪む」という動作点の設計問題。R04下問13・R03問18で問われた。</p>
+<h2 id="_4">🔄 解法フローチャート<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>トランジスタ増幅回路の問題を見たら
+① 「直流動作点（バイアス点）を求めよ」
+   VBE ≈ 0.6V（シリコン）と仮定
+   IB = (VBB - VBE) / RB
+   IC = hFE × IB
+   VCE = VCC - IC × RC
+
+② 「増幅度 Av を求めよ」
+   エミッタ接地: ==Av = -hFE × RC / hie==
+   （hieが与えられていない場合は ==VT/IB = 26mV/IB== で近似）
+
+③ 「電流の収支を確認」
+   IE = IB + IC（常に成立）
+
+④ 単位・符号の確認
+   コレクタ電流 IC は mA 単位が多い
+</code></pre></div>
+<h2 id="_5">📝 出題実績<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>出典: 電験王3（denken-ou.com）H18〜R07上期の過去問一覧より収集（2026-03-30）
+※ 電子理論（電子回路）の中からトランジスタ増幅回路・FET増幅回路に関する問題を抽出。オペアンプは opamp.md を参照。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>年度</th>
+<th>問</th>
+<th>形式</th>
+<th>何が問われたか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R07上</td>
+<td>問13</td>
+<td>計算</td>
+<td>トランジスタの電流増幅率と出力インピーダンス</td>
+</tr>
+<tr>
+<td>R07上</td>
+<td>問18</td>
+<td>計算</td>
+<td>エミッタホロワ回路における回路計算</td>
+</tr>
+<tr>
+<td>R06下</td>
+<td>問13</td>
+<td>計算</td>
+<td>トランジスタの静特性を利用した回路演算</td>
+</tr>
+<tr>
+<td>R05下</td>
+<td>問13</td>
+<td>計算</td>
+<td>縦続接続した増幅器の電圧利得の導出</td>
+</tr>
+<tr>
+<td>R05下</td>
+<td>問18</td>
+<td>計算</td>
+<td>接合形FETを用いた増幅回路の演算</td>
+</tr>
+<tr>
+<td>R05上</td>
+<td>問13</td>
+<td>論説</td>
+<td>コレクタ接地増幅回路の特徴</td>
+</tr>
+<tr>
+<td>R04下</td>
+<td>問13</td>
+<td>計算</td>
+<td>正弦波を出力している発振回路の発振条件</td>
+</tr>
+<tr>
+<td>R04下</td>
+<td>問18</td>
+<td>計算</td>
+<td>電流帰還バイアス回路の電圧値</td>
+</tr>
+<tr>
+<td>R04上</td>
+<td>問18</td>
+<td>計算</td>
+<td>トランジスタ増幅器のバイアス回路</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>問13</td>
+<td>計算</td>
+<td>電界効果トランジスタの簡易小信号等価回路</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>問18</td>
+<td>計算</td>
+<td>トランジスタを用いた発振回路</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>問18</td>
+<td>計算</td>
+<td>エミッタ接地トランジスタ増幅回路の動作特性</td>
+</tr>
+<tr>
+<td>R01</td>
+<td>問13</td>
+<td>論説</td>
+<td>負帰還増幅回路</td>
+</tr>
+<tr>
+<td>H30</td>
+<td>問16</td>
+<td>計算</td>
+<td>エミッタホロワ回路</td>
+</tr>
+<tr>
+<td>H29</td>
+<td>問13</td>
+<td>計算</td>
+<td>バイポーラトランジスタ</td>
+</tr>
+<tr>
+<td>H28</td>
+<td>問13</td>
+<td>計算</td>
+<td>エミッタ接地トランジスタ増幅回路</td>
+</tr>
+<tr>
+<td>H27</td>
+<td>問13</td>
+<td>論説</td>
+<td>バイポーラトランジスタを用いた電力増幅回路</td>
+</tr>
+<tr>
+<td>H25</td>
+<td>問13</td>
+<td>論説</td>
+<td>交流小信号増幅回路</td>
+</tr>
+<tr>
+<td>H24</td>
+<td>問13</td>
+<td>計算</td>
+<td>ダイオードの特性による電流の変化</td>
+</tr>
+<tr>
+<td>H24</td>
+<td>問18</td>
+<td>計算</td>
+<td>FET増幅回路の特性</td>
+</tr>
+<tr>
+<td>H23</td>
+<td>問13</td>
+<td>穴埋</td>
+<td>トランジスタを用いた非安定マルチバイブレータ</td>
+</tr>
+<tr>
+<td>H23</td>
+<td>問18</td>
+<td>計算</td>
+<td>トランジスタによる小信号増幅回路</td>
+</tr>
+<tr>
+<td>H21</td>
+<td>問13</td>
+<td>計算</td>
+<td>ソース接地のFET増幅器の静特性</td>
+</tr>
+<tr>
+<td>H21</td>
+<td>問18</td>
+<td>計算</td>
+<td>エミッタ接地のトランジスタ増幅器</td>
+</tr>
+<tr>
+<td>H20</td>
+<td>問13</td>
+<td>論説</td>
+<td>トランジスタの接地方式の異なる基本増幅回路</td>
+</tr>
+<tr>
+<td>H19</td>
+<td>問18</td>
+<td>計算</td>
+<td>トランジスタを用いた変成器結合電力増幅回路</td>
+</tr>
+<tr>
+<td>H18</td>
+<td>問13</td>
+<td>穴埋</td>
+<td>帰還回路を含む増幅回路の発振条件</td>
+</tr>
+<tr>
+<td>H18</td>
+<td>問18</td>
+<td>計算</td>
+<td>負帰還増幅回路の等価回路と電圧増幅度</td>
+</tr>
+</tbody>
+</table>
+<p>→ 出題頻度: ★★★（毎年度1〜2問、問13・問18から出題）</p>
+<hr />
+<details class="example">
+<summary>確認問題</summary>
+<p><strong>問題</strong>: <abbr title="直流電流増幅率 (DC Current Gain)">hFE</abbr>=100のNPNトランジスタにベース電流IB=0.02mAが流れているとき、コレクタ電流ICとエミッタ電流IEを求めよ。</p>
+<details class="success">
+<summary>解答</summary>
+<p><strong>答え</strong>: IC = <abbr title="直流電流増幅率 (DC Current Gain)">hFE</abbr>×IB = 100×0.02 = 2mA、IE = IB+IC = 0.02+2 = 2.02mA
+<strong>ポイント</strong>: IE = IB+IC（3端子の電流収支）。ICはIBのhFE倍</p>
+</details>
+</details>
+<details class="note">
+<summary>Level 2: 数学的背景 🔬</summary>
+<p><strong>hパラメータと小信号等価回路</strong></p>
+<p>トランジスタの小信号動作はhパラメータで記述する：
+[ \begin{pmatrix} v_1 \ i_2 \end{pmatrix} = \begin{pmatrix} h_{11} &amp; h_{12} \ h_{21} &amp; h_{22} \end{pmatrix} \begin{pmatrix} i_1 \ v_2 \end{pmatrix} ]</p>
+<p>エミッタ接地での主要パラメータ：
+- <span class="arithmatex">\( h_{ie} \)</span>（入力インピーダンス）≈ β × <span class="arithmatex">\( V_T / I_C \)</span>（<span class="arithmatex">\( V_T \)</span>=26mV @ 室温）
+- <span class="arithmatex">\( h_{fe} \)</span>（電流増幅率）≈ <span class="arithmatex">\( \beta \)</span> = <abbr title="直流電流増幅率 (DC Current Gain)">hFE</abbr>（直流）
+- <span class="arithmatex">\( h_{oe} \)</span>（出力アドミタンス）≈ 1/ro</p>
+<p>電圧増幅度 <span class="arithmatex">\( A_v = -h_{fe} R_C / h_{ie} \)</span> はこのモデルから導出される。</p>
+</details>
+<details class="info">
+<summary>Level 3: 実務との接点 🏭</summary>
+<p>現代の電力変換回路ではMOSFETやIGBTがバイポーラトランジスタを置き換えているが、動作原理の理解にBJTの基礎が必要。インバータ・UPS・スイッチング電源の中核技術。</p>
+</details>
+<hr />
+<p><em>最終確認: 2026-04-02 | ステータス: v0.8（出題実績ベースの解説補強済み：エミッタフォロワ計算・縦続接続・電流帰還バイアス・FETソース接地・負帰還・発振条件） | <a href="../../reference/versioning/">バージョニング基準</a></em></p>
+<!-- 略語ツールチップ定義 — 電験3種 理論Wiki -->
+<!-- pymdownx.snippets の auto_append で全ページに自動適用 -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Furutachi — 個人学習用
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/kfurufuru/denken-wiki-riron" target="_blank" rel="noopener" title="GitHub リポジトリ" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.path", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
