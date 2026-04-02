@@ -27,22 +27,22 @@ tags: [テーマ一覧]
 
 | # | テーマ | 分野 | 難易度 | 出題頻度 | 優先度 | バージョン | リンク |
 |---|---|---|---|---|---|---|---|
-| 1 | 直流回路 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7draft | [chokuryu-kairo](chokuryu-kairo.md) |
-| 2 | 交流回路基礎 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7draft | [kouryu-kiso](kouryu-kiso.md) |
-| 3 | RLC回路 | 電気回路 | ★★★ | 高 | 🔴 最優先 | v0.7draft | [rlc-kairo](rlc-kairo.md) |
-| 4 | 交流電力 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7draft | [kouryu-denryoku](kouryu-denryoku.md) |
-| 5 | 三相交流 | 電気回路 | ★★★ | 高 | 🔴 最優先 | v0.7draft | [sansou-kouryu](sansou-kouryu.md) |
-| 6 | 過渡現象 | 電気回路 | ★★★ | 中 | 🟡 重要 | v0.7draft | [kato-gensho](kato-gensho.md) |
-| 7 | 静電気 | 電磁気 | ★★☆ | 高 | 🔴 最優先 | v0.7draft | [seidenki](seidenki.md) |
-| 8 | コンデンサ | 電磁気 | ★★☆ | 高 | 🔴 最優先 | v0.7draft | [condenser](condenser.md) |
-| 9 | 電磁力 | 電磁気 | ★★☆ | 中 | 🟡 重要 | v0.7draft | [denjiryoku](denjiryoku.md) |
-| 10 | 磁気回路 | 電磁気 | ★★★ | 中 | 🟡 重要 | v0.7draft | [jiki-kairo](jiki-kairo.md) |
-| 11 | インダクタンス | 電磁気 | ★★★ | 中 | 🟡 重要 | v0.7draft | [inductance](inductance.md) |
-| 12 | 半導体 | 電子理論 | ★★☆ | 中 | 🟡 重要 | v0.7draft | [handotai](handotai.md) |
-| 13 | トランジスタ・FET | 電子理論 | ★★★ | 中 | 🟡 重要 | v0.7draft | [transistor](transistor.md) |
-| 14 | オペアンプ | 電子理論 | ★★★ | 中 | 🟢 余裕があれば | v0.7draft | [opamp](opamp.md) |
-| 15 | 計器の原理 | 電気計測 | ★★☆ | 中 | 🟡 重要 | v0.7draft | [keiki](keiki.md) |
-| 16 | ブリッジ回路 | 電気計測 | ★★☆ | 中 | 🟡 重要 | v0.7draft | [bridge](bridge.md) |
+| 1 | 直流回路 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [chokuryu-kairo](chokuryu-kairo.md) |
+| 2 | 交流回路基礎 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [kouryu-kiso](kouryu-kiso.md) |
+| 3 | RLC回路 | 電気回路 | ★★★ | 高 | 🔴 最優先 | v0.7 | [rlc-kairo](rlc-kairo.md) |
+| 4 | 交流電力 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [kouryu-denryoku](kouryu-denryoku.md) |
+| 5 | 三相交流 | 電気回路 | ★★★ | 高 | 🔴 最優先 | v0.7 | [sansou-kouryu](sansou-kouryu.md) |
+| 6 | 過渡現象 | 電気回路 | ★★★ | 中 | 🟡 重要 | v0.7 | [kato-gensho](kato-gensho.md) |
+| 7 | 静電気 | 電磁気 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [seidenki](seidenki.md) |
+| 8 | コンデンサ | 電磁気 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [condenser](condenser.md) |
+| 9 | 電磁力 | 電磁気 | ★★☆ | 中 | 🟡 重要 | v0.7 | [denjiryoku](denjiryoku.md) |
+| 10 | 磁気回路 | 電磁気 | ★★★ | 中 | 🟡 重要 | v0.7 | [jiki-kairo](jiki-kairo.md) |
+| 11 | インダクタンス | 電磁気 | ★★★ | 中 | 🟡 重要 | v0.7 | [inductance](inductance.md) |
+| 12 | 半導体 | 電子理論 | ★★☆ | 中 | 🟡 重要 | v0.7 | [handotai](handotai.md) |
+| 13 | トランジスタ・FET | 電子理論 | ★★★ | 中 | 🟡 重要 | v0.7 | [transistor](transistor.md) |
+| 14 | オペアンプ | 電子理論 | ★★★ | 中 | 🟢 余裕があれば | v0.7 | [opamp](opamp.md) |
+| 15 | 計器の原理 | 電気計測 | ★★☆ | 中 | 🟡 重要 | v0.7 | [keiki](keiki.md) |
+| 16 | ブリッジ回路 | 電気計測 | ★★☆ | 中 | 🟡 重要 | v0.7 | [bridge](bridge.md) |
 
 ---
 
