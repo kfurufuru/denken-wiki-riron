@@ -35,39 +35,39 @@ hide:
 
 ## 16テーマ クイックアクセス
 
-> 重要度: **S**＝毎年必出 / **A**＝頻出 / **B**＝時々出る　｜　( )内は出題割合の目安
+> 重要度: **S**＝毎年必出 / **A**＝頻出 / **B**＝時々出る　｜　[分野別出題割合→](kakomon/by-field.md)
 
 ### ⚡ 電気回路
 | テーマ | 重要度 | 難易度 |
 |--------|--------|--------|
-| [直流回路（オーム・キルヒホッフ・テブナン）](themes/chokuryu-kairo.md) | **S**（20%） | ★★★ |
-| [交流回路基礎（実効値・フェーザー・位相）](themes/kouryu-kiso.md) | **S**（20%） | ★★★★ |
-| [RLC回路（インピーダンス・共振・Q値）](themes/rlc-kairo.md) | **S**（20%） | ★★★★★ |
-| [交流電力（有効・無効・皮相・力率）](themes/kouryu-denryoku.md) | **S**（20%） | ★★★★ |
-| [三相交流（Y-Δ変換・三相電力）](themes/sansou-kouryu.md) | B（8%・B問題10点） | ★★★★★ |
-| [過渡現象（RC・RL時定数）](themes/kato-gensho.md) | B（7%） | ★★★★ |
+| [直流回路（オーム・キルヒホッフ・テブナン）](themes/chokuryu-kairo.md) | **S** | ★★★ |
+| [交流回路基礎（実効値・フェーザー・位相）](themes/kouryu-kiso.md) | **S** | ★★★★ |
+| [RLC回路（インピーダンス・共振・Q値）](themes/rlc-kairo.md) | **S** | ★★★★★ |
+| [交流電力（有効・無効・皮相・力率）](themes/kouryu-denryoku.md) | **S** | ★★★★ |
+| [三相交流（Y-Δ変換・三相電力）](themes/sansou-kouryu.md) | B | ★★★★★ |
+| [過渡現象（RC・RL時定数）](themes/kato-gensho.md) | B | ★★★★ |
 
 ### 🧲 電磁気
 | テーマ | 重要度 | 難易度 |
 |--------|--------|--------|
-| [静電気（クーロン力・電界・電位）](themes/seidenki.md) | **S**（25%） | ★★★ |
-| [コンデンサ（静電容量・エネルギー）](themes/condenser.md) | **S**（25%） | ★★★ |
-| [電磁力（フレミング・電磁誘導）](themes/denjiryoku.md) | **S**（25%） | ★★★ |
-| [磁気回路（磁束・磁気抵抗）](themes/jiki-kairo.md) | **S**（25%） | ★★★★ |
-| [インダクタンス（自己・相互・エネルギー）](themes/inductance.md) | **S**（25%） | ★★★★ |
+| [静電気（クーロン力・電界・電位）](themes/seidenki.md) | **S** | ★★★ |
+| [コンデンサ（静電容量・エネルギー）](themes/condenser.md) | **S** | ★★★ |
+| [電磁力（フレミング・電磁誘導）](themes/denjiryoku.md) | **S** | ★★★ |
+| [磁気回路（磁束・磁気抵抗）](themes/jiki-kairo.md) | **S** | ★★★★ |
+| [インダクタンス（自己・相互・エネルギー）](themes/inductance.md) | **S** | ★★★★ |
 
 ### 💡 電子理論
 | テーマ | 重要度 | 難易度 |
 |--------|--------|--------|
-| [半導体（PN接合・ダイオード）](themes/handotai.md) | A（15%） | ★★★ |
-| [トランジスタ・FET（増幅回路）](themes/transistor.md) | A（15%） | ★★★★ |
-| [オペアンプ（反転・非反転）](themes/opamp.md) | A（15%） | ★★★ |
+| [半導体（PN接合・ダイオード）](themes/handotai.md) | A | ★★★ |
+| [トランジスタ・FET（増幅回路）](themes/transistor.md) | A | ★★★★ |
+| [オペアンプ（反転・非反転）](themes/opamp.md) | A | ★★★ |
 
 ### 📏 電気計測
 | テーマ | 重要度 | 難易度 |
 |--------|--------|--------|
-| [計器の原理と測定法](themes/keiki.md) | A（13%） | ★★★ |
-| [ブリッジ回路（ホイートストン・マクスウェル）](themes/bridge.md) | A（13%） | ★★★ |
+| [計器の原理と測定法](themes/keiki.md) | A | ★★★ |
+| [ブリッジ回路（ホイートストン・マクスウェル）](themes/bridge.md) | A | ★★★ |
 
 ---
 
