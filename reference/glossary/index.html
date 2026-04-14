@@ -93,11 +93,30 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-  <a href="https://kfurufuru.github.io/denken-wiki/"
-     style="font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
-    📗 法規Wiki へ移動
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-  </a>
+  <div style="display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; padding:2px 0;">
+    <a href="https://kfurufuru.github.io/secretary-portal/" style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:4px; padding:2px 10px; font-size:0.82rem;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">← ポータル</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <span style="font-size:0.78rem; color:rgba(255,255,255,0.6); margin-right:4px;">電験3種 :</span>
+    <a href="https://kfurufuru.github.io/denken-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      📗 法規Wiki
+    </a>
+    <span style="font-weight:700; color:#fff; background:rgba(255,255,255,0.25); border-radius:4px; padding:2px 10px; font-size:0.82rem;">
+      📘 理論Wiki
+    </span>
+    <a href="https://kfurufuru.github.io/denken-wiki-denryoku/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      ⚡ 電力Wiki
+    </a>
+    <span style="color:rgba(255,255,255,0.4); margin:0 2px;">|</span>
+    <a href="https://kfurufuru.github.io/ei-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      🔧 電気計装Wiki
+    </a>
+  </div>
 
           </div>
           
@@ -3258,150 +3277,194 @@
 <h2 id="_2">ア行<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="y">アドミタンス（<abbr title="アドミタンス (Admittance) — インピーダンスの逆数 [S]">Y</abbr>）<a class="headerlink" href="#y" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: アドミタンス / <strong>英語</strong>: Admittance
-インピーダンスの逆数。 <span class="arithmatex">\(Y = 1/Z\)</span> [<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>（ジーメンス）]。並列回路では足し算できるため便利。コンダクタンス <span class="arithmatex">\(G\)</span> とサセプタンス <span class="arithmatex">\(B\)</span> に分解できる（<span class="arithmatex">\(Y = G + jB\)</span>）。</p>
+インピーダンスの逆数。 <span class="arithmatex">\(Y = 1/Z\)</span> [<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>（ジーメンス）]。並列回路では足し算できるため便利。コンダクタンス <span class="arithmatex">\(G\)</span> とサセプタンス <span class="arithmatex">\(B\)</span> に分解できる（<span class="arithmatex">\(Y = G + jB\)</span>）。
+→ <a href="../../themes/kouryu-kiso/">交流回路基礎</a></p>
 <h3 id="l">インダクタンス（<abbr title="インダクタンス (Inductance) [H]">L</abbr>）<a class="headerlink" href="#l" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: インダクタンス / <strong>英語</strong>: Inductance
-コイルが電流変化に対して逆起電力を発生させる係数。 <span class="arithmatex">\(v = L \cdot di/dt\)</span> [H（ヘンリー）]。コイルの形状・巻数・透磁率で決まる。</p>
+コイルが電流変化に対して逆起電力を発生させる係数。 <span class="arithmatex">\(v = L \cdot di/dt\)</span> [H（ヘンリー）]。コイルの形状・巻数・透磁率で決まる。
+→ <a href="../../themes/inductance/">インダクタンス</a></p>
 <h3 id="z">インピーダンス（<abbr title="インピーダンス (Impedance) — 交流回路の複素抵抗 [Ω]">Z</abbr>）<a class="headerlink" href="#z" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: インピーダンス / <strong>英語</strong>: Impedance
-交流回路における電流の流れにくさ。直流の抵抗に相当するが位相情報も持つ複素量。 <span class="arithmatex">\(Z = R + jX\)</span> [Ω]。</p>
+交流回路における電流の流れにくさ。直流の抵抗に相当するが位相情報も持つ複素量。 <span class="arithmatex">\(Z = R + jX\)</span> [Ω]。
+→ <a href="../../themes/rlc-kairo/">RLC回路</a></p>
 <h3 id="_3">位相（<abbr title="位相角 (Phase Angle) — 電圧と電流の波形のズレを角度で表す。力率 cosφ を決める">φ</abbr>）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: イソウ / <strong>英語</strong>: Phase
-波の時間的なズレを角度（ラジアンまたは度）で表したもの。電圧と電流の位相差が力率を決める。</p>
+波の時間的なズレを角度（ラジアンまたは度）で表したもの。電圧と電流の位相差が力率を決める。
+→ <a href="../../themes/kouryu-kiso/">交流回路基礎</a></p>
 <h3 id="_4">渦電流<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ウズデンリュウ / <strong>英語</strong>: Eddy Current
-変化する磁束によって導体内部に誘導される循環電流。鉄心損失の一因であり、薄い鉄板を積層することで低減できる。</p>
+変化する磁束によって導体内部に誘導される循環電流。鉄心損失の一因であり、薄い鉄板を積層することで低減できる。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <hr />
 <h2 id="_5">カ行<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <h3 id="_6">角周波数（<abbr title="角周波数 (Angular Frequency) — ω = 2πf [rad/s]。リアクタンス XL=ωL、XC=1/(ωC) の計算に使用">ω</abbr>）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: カクシュウハスウ / <strong>英語</strong>: Angular Frequency
-1秒間に何ラジアン進むかを表す量。周波数 <span class="arithmatex">\(f\)</span> [Hz] との関係は <span class="arithmatex">\(\omega = 2\pi f\)</span> [rad/s]。リアクタンス計算 <span class="arithmatex">\(X_L = \omega L\)</span>、<span class="arithmatex">\(X_C = 1/(\omega C)\)</span> の基本定数。50Hzでは <abbr title="角周波数 (Angular Frequency) — ω = 2πf [rad/s]。リアクタンス XL=ωL、XC=1/(ωC) の計算に使用">ω</abbr> ≈ 314 rad/s。</p>
+1秒間に何ラジアン進むかを表す量。周波数 <span class="arithmatex">\(f\)</span> [Hz] との関係は <span class="arithmatex">\(\omega = 2\pi f\)</span> [rad/s]。リアクタンス計算 <span class="arithmatex">\(X_L = \omega L\)</span>、<span class="arithmatex">\(X_C = 1/(\omega C)\)</span> の基本定数。50Hzでは <abbr title="角周波数 (Angular Frequency) — ω = 2πf [rad/s]。リアクタンス XL=ωL、XC=1/(ωC) の計算に使用">ω</abbr> ≈ 314 rad/s。
+→ <a href="../../themes/kouryu-kiso/">交流回路基礎</a></p>
 <h3 id="z_1">共役複素数（<abbr title="インピーダンス (Impedance) — 交流回路の複素抵抗 [Ω]">Z</abbr>*）<a class="headerlink" href="#z_1" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: キョウヤクフクソスウ / <strong>英語</strong>: Complex Conjugate
-複素数 <span class="arithmatex">\(Z = a + jb\)</span> に対して <span class="arithmatex">\(Z^* = a - jb\)</span>。複素電力の計算 <span class="arithmatex">\(S = \dot{V}\dot{I}^*\)</span> で使い、実部が有効電力 <span class="arithmatex">\(P\)</span>、虚部が無効電力 <span class="arithmatex">\(Q\)</span> を与える。</p>
+複素数 <span class="arithmatex">\(Z = a + jb\)</span> に対して <span class="arithmatex">\(Z^* = a - jb\)</span>。複素電力の計算 <span class="arithmatex">\(S = \dot{V}\dot{I}^*\)</span> で使い、実部が有効電力 <span class="arithmatex">\(P\)</span>、虚部が無効電力 <span class="arithmatex">\(Q\)</span> を与える。
+→ <a href="../../themes/kouryu-denryoku/">交流電力</a></p>
 <h3 id="mmf">起磁力（<abbr title="起磁力 (Magnetomotive Force) — 磁束を発生させる源 [A]">MMF</abbr>）<a class="headerlink" href="#mmf" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: キジリョク / <strong>英語</strong>: Magnetomotive Force
-磁束を発生させる原動力。 <span class="arithmatex">\(\mathcal{F} = NI\)</span> [A（アンペア）]。電気回路の起電力に対応する磁気回路の概念。</p>
+磁束を発生させる原動力。 <span class="arithmatex">\(\mathcal{F} = NI\)</span> [A（アンペア）]。電気回路の起電力に対応する磁気回路の概念。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="j">虚数単位（<abbr title="虚数単位 — j = √(-1)。電気では i を電流と区別するため j を使用。フェーザー・複素インピーダンスの基本">j</abbr>）<a class="headerlink" href="#j" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: キョスウタンイ / <strong>英語</strong>: Imaginary Unit
-<span class="arithmatex">\(j = \sqrt{-1}\)</span>。電気では電流と区別するため <span class="arithmatex">\(i\)</span> でなく <span class="arithmatex">\(j\)</span> を使う。フェーザー <span class="arithmatex">\(\dot{V} = V\angle\varphi\)</span> や複素インピーダンス <span class="arithmatex">\(Z = R + jX\)</span> を表現する際の基本。微分演算子 <span class="arithmatex">\(d/dt\)</span> は周波数領域で <span class="arithmatex">\(j\omega\)</span> に対応する。</p>
+<span class="arithmatex">\(j = \sqrt{-1}\)</span>。電気では電流と区別するため <span class="arithmatex">\(i\)</span> でなく <span class="arithmatex">\(j\)</span> を使う。フェーザー <span class="arithmatex">\(\dot{V} = V\angle\varphi\)</span> や複素インピーダンス <span class="arithmatex">\(Z = R + jX\)</span> を表現する際の基本。微分演算子 <span class="arithmatex">\(d/dt\)</span> は周波数領域で <span class="arithmatex">\(j\omega\)</span> に対応する。
+→ <a href="../../themes/kouryu-kiso/">交流回路基礎</a></p>
 <h3 id="q"><abbr title="品質係数 (Quality Factor) — 共振の鋭さを表す無次元数">Q値</abbr>（品質係数）<a class="headerlink" href="#q" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: キューチ / <strong>英語</strong>: Quality Factor
-直列RLC共振では <span class="arithmatex">\(Q = \omega_0 L/R = 1/(\omega_0 CR)\)</span> の無次元数。Qが大きいほど共振ピークが細く高い（選択性が高い）。共振時コイル・コンデンサの電圧は入力電圧の <abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> 倍に達するため、過電圧に注意。</p>
+直列RLC共振では <span class="arithmatex">\(Q = \omega_0 L/R = 1/(\omega_0 CR)\)</span> の無次元数。Qが大きいほど共振ピークが細く高い（選択性が高い）。共振時コイル・コンデンサの電圧は入力電圧の <abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr> 倍に達するため、過電圧に注意。
+→ <a href="../../themes/rlc-kairo/">RLC回路</a></p>
 <h3 id="resonance">共振（resonance）<a class="headerlink" href="#resonance" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: キョウシン / <strong>英語</strong>: Resonance
-<span class="arithmatex">\(X_L = X_C\)</span> となる状態。直列共振では電流が最大・インピーダンスが最小になり、並列共振では電流が最小・インピーダンスが最大になる。</p>
+<span class="arithmatex">\(X_L = X_C\)</span> となる状態。直列共振では電流が最大・インピーダンスが最小になり、並列共振では電流が最小・インピーダンスが最大になる。
+→ <a href="../../themes/rlc-kairo/">RLC回路</a></p>
 <h3 id="c">クーロン（<abbr title="静電容量 (Capacitance) [F]">C</abbr>）<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: クーロン / <strong>英語</strong>: Coulomb
-電荷の SI 単位。1 <abbr title="静電容量 (Capacitance) [F]">C</abbr> は約 <span class="arithmatex">\(6.24 \times 10^{18}\)</span> 個の電子が持つ電荷量に相当する。</p>
+電荷の SI 単位。1 <abbr title="静電容量 (Capacitance) [F]">C</abbr> は約 <span class="arithmatex">\(6.24 \times 10^{18}\)</span> 個の電子が持つ電荷量に相当する。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <h3 id="k">結合係数（k）<a class="headerlink" href="#k" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ケツゴウケイスウ / <strong>英語</strong>: Coupling Coefficient
-相互インダクタンスの大きさを表す無次元数。 <span class="arithmatex">\(k = M/\sqrt{L_1 L_2}\)</span>、範囲は <span class="arithmatex">\(0 \leq k \leq 1\)</span>。<span class="arithmatex">\(k=1\)</span> が完全結合。</p>
+相互インダクタンスの大きさを表す無次元数。 <span class="arithmatex">\(k = M/\sqrt{L_1 L_2}\)</span>、範囲は <span class="arithmatex">\(0 \leq k \leq 1\)</span>。<span class="arithmatex">\(k=1\)</span> が完全結合。
+→ <a href="../../themes/inductance/">インダクタンス</a></p>
 <h3 id="g">コンダクタンス（G）<a class="headerlink" href="#g" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: コンダクタンス / <strong>英語</strong>: Conductance
-抵抗の逆数。 <span class="arithmatex">\(G = 1/R\)</span> [<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>（ジーメンス）]。並列接続時に足し算できる。</p>
+抵抗の逆数。 <span class="arithmatex">\(G = 1/R\)</span> [<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>（ジーメンス）]。並列接続時に足し算できる。
+→ <a href="../../themes/chokuryu-kairo/">直流回路</a></p>
 <hr />
 <h2 id="_7">サ行<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h3 id="rms">実効値（<abbr title="実効値 (Root Mean Square)">RMS</abbr>）<a class="headerlink" href="#rms" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ジッコウチ / <strong>英語</strong>: Root Mean Square
-交流の電力効果が等しい直流値。正弦波では <span class="arithmatex">\(V_{rms} = V_{max}/\sqrt{2}\)</span>。測定器の電圧・電流は通常この値。</p>
+交流の電力効果が等しい直流値。正弦波では <span class="arithmatex">\(V_{rms} = V_{max}/\sqrt{2}\)</span>。測定器の電圧・電流は通常この値。
+→ <a href="../../themes/kouryu-kiso/">交流回路基礎</a></p>
 <h3 id="h">磁界（H）<a class="headerlink" href="#h" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ジカイ / <strong>英語</strong>: Magnetic Field Intensity
-単位長さあたりの起磁力。 <span class="arithmatex">\(H = NI/l\)</span> [A/m]。アンペアの法則 <span class="arithmatex">\(\oint H \cdot dl = NI\)</span> で計算できる。</p>
+単位長さあたりの起磁力。 <span class="arithmatex">\(H = NI/l\)</span> [A/m]。アンペアの法則 <span class="arithmatex">\(\oint H \cdot dl = NI\)</span> で計算できる。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="c_1">静電容量（<abbr title="静電容量 (Capacitance) [F]">C</abbr>）<a class="headerlink" href="#c_1" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: セイデンヨウリョウ / <strong>英語</strong>: Capacitance
-コンデンサに電荷を蓄える能力。 <span class="arithmatex">\(Q = CV\)</span> [F（ファラッド）]。電極の面積・間隔・誘電率で決まる。</p>
+コンデンサに電荷を蓄える能力。 <span class="arithmatex">\(Q = CV\)</span> [F（ファラッド）]。電極の面積・間隔・誘電率で決まる。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <h3 id="_8">磁束（<abbr title="位相角 (Phase Angle) — 電圧と電流の波形のズレを角度で表す。力率 cosφ を決める">φ</abbr>）<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ジソク / <strong>英語</strong>: Magnetic Flux
-磁界の強さと面積の積で表す磁気量。 <span class="arithmatex">\(\phi = B \cdot A\)</span> [Wb（ウェーバー）]。電磁誘導の基本量。</p>
+磁界の強さと面積の積で表す磁気量。 <span class="arithmatex">\(\phi = B \cdot A\)</span> [Wb（ウェーバー）]。電磁誘導の基本量。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="b">磁束密度（B）<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ジソクミツド / <strong>英語</strong>: Magnetic Flux Density
-単位面積あたりの磁束。 <span class="arithmatex">\(B = \phi/A = \mu H\)</span> [T（テスラ）]。材料の飽和特性に関係する。</p>
+単位面積あたりの磁束。 <span class="arithmatex">\(B = \phi/A = \mu H\)</span> [T（テスラ）]。材料の飽和特性に関係する。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="rm">磁気抵抗（Rm）<a class="headerlink" href="#rm" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ジキテイコウ / <strong>英語</strong>: Reluctance
-磁束の流れにくさ。 <span class="arithmatex">\(R_m = l/(\mu A)\)</span> [A/Wb]。電気回路の抵抗に対応する磁気回路の概念。</p>
+磁束の流れにくさ。 <span class="arithmatex">\(R_m = l/(\mu A)\)</span> [A/Wb]。電気回路の抵抗に対応する磁気回路の概念。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <hr />
 <h2 id="_9">タ行<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <h3 id="_10">時定数（<abbr title="時定数 (Time Constant) — 過渡現象の変化速度を決める定数 [s]">τ</abbr>）<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ジテイスウ / <strong>英語</strong>: Time Constant
-過渡現象の変化速度を決める定数。RC回路では <span class="arithmatex">\(\tau = RC\)</span>、RL回路では <span class="arithmatex">\(\tau = L/R\)</span> [s]。<span class="arithmatex">\(\tau\)</span> 秒後に変化量の約63.2%が達成され、<span class="arithmatex">\(5\tau\)</span> 後にほぼ定常値に到達する。</p>
+過渡現象の変化速度を決める定数。RC回路では <span class="arithmatex">\(\tau = RC\)</span>、RL回路では <span class="arithmatex">\(\tau = L/R\)</span> [s]。<span class="arithmatex">\(\tau\)</span> 秒後に変化量の約63.2%が達成され、<span class="arithmatex">\(5\tau\)</span> 後にほぼ定常値に到達する。
+→ <a href="../../themes/kato-gensho/">過渡現象</a></p>
 <h3 id="per-unit">単位法（per-unit）<a class="headerlink" href="#per-unit" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: タンイホウ / <strong>英語</strong>: Per-Unit System
-基準値（ベース値）で各量を正規化する表現方法。電力系統の解析でよく使われる。</p>
+基準値（ベース値）で各量を正規化する表現方法。電力系統の解析でよく使われる。
+→ <a href="../../themes/sansou-kouryu/">三相交流</a></p>
 <h3 id="_11">透磁率（μ）<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: トウジリツ / <strong>英語</strong>: Permeability
-磁束の通りやすさを表す材料定数。 <span class="arithmatex">\(\mu = \mu_0 \mu_r\)</span> [H/m]。真空の透磁率 <span class="arithmatex">\(\mu_0 = 4\pi \times 10^{-7}\)</span> H/m。</p>
+磁束の通りやすさを表す材料定数。 <span class="arithmatex">\(\mu = \mu_0 \mu_r\)</span> [H/m]。真空の透磁率 <span class="arithmatex">\(\mu_0 = 4\pi \times 10^{-7}\)</span> H/m。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="e">電界（E）<a class="headerlink" href="#e" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: デンカイ / <strong>英語</strong>: Electric Field
-単位正電荷に働く力の場。 <span class="arithmatex">\(E = F/q = V/d\)</span> [V/m]。静電気の問題の基本量。</p>
+単位正電荷に働く力の場。 <span class="arithmatex">\(E = F/q = V/d\)</span> [V/m]。静電気の問題の基本量。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <h3 id="_12">電気力線<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: デンキリョクセン / <strong>英語</strong>: Electric Field Line
-電界の向きと強さを可視化する仮想の線。正電荷から出て負電荷に入る。電気力線の密度が電界の強さを表す。</p>
+電界の向きと強さを可視化する仮想の線。正電荷から出て負電荷に入る。電気力線の密度が電界の強さを表す。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <h3 id="_13">電磁誘導<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: デンジユウドウ / <strong>英語</strong>: Electromagnetic Induction
-磁束の変化によって起電力が生じる現象（ファラデーの法則）。 <span class="arithmatex">\(e = -N \cdot d\phi/dt\)</span>。</p>
+磁束の変化によって起電力が生じる現象（ファラデーの法則）。 <span class="arithmatex">\(e = -N \cdot d\phi/dt\)</span>。
+→ <a href="../../themes/inductance/">インダクタンス</a></p>
 <h3 id="v">電位（V）<a class="headerlink" href="#v" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: デンイ / <strong>英語</strong>: Electric Potential
-基準点に対する電気的な位置エネルギー [V]。電圧は2点間の電位差を指す。</p>
+基準点に対する電気的な位置エネルギー [V]。電圧は2点間の電位差を指す。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <h3 id="d">電束（D）<a class="headerlink" href="#d" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: デンソク / <strong>英語</strong>: Electric Flux Density
-単位面積あたりの電気変位。 <span class="arithmatex">\(D = \varepsilon E\)</span> [<abbr title="静電容量 (Capacitance) [F]">C</abbr>/m²]。ガウスの法則で使う量。</p>
+単位面積あたりの電気変位。 <span class="arithmatex">\(D = \varepsilon E\)</span> [<abbr title="静電容量 (Capacitance) [F]">C</abbr>/m²]。ガウスの法則で使う量。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <hr />
 <h2 id="_14">ナ行<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <h3 id="_15">内部抵抗<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ナイブテイコウ / <strong>英語</strong>: Internal Resistance
-電源や計器が持つ理想的でない抵抗成分。電流が流れると内部抵抗で電圧降下が生じ、端子電圧が起電力より低下する。</p>
+電源や計器が持つ理想的でない抵抗成分。電流が流れると内部抵抗で電圧降下が生じ、端子電圧が起電力より低下する。
+→ <a href="../../themes/chokuryu-kairo/">直流回路</a></p>
 <hr />
 <h2 id="_16">ハ行<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <h3 id="bh">BH曲線（磁化曲線）<a class="headerlink" href="#bh" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ビーエイチキョクセン / <strong>英語</strong>: <abbr title="磁束密度Bと磁界Hの関係曲線 (BH curve)">BH</abbr> Curve / Magnetization Curve
-磁界強度 <span class="arithmatex">\(H\)</span> に対する磁束密度 <span class="arithmatex">\(B\)</span> の関係曲線。磁気飽和（Bが頭打ちになる領域）とヒステリシス（磁化の履歴効果）を表す。鉄心設計・トランス効率の基礎。</p>
+磁界強度 <span class="arithmatex">\(H\)</span> に対する磁束密度 <span class="arithmatex">\(B\)</span> の関係曲線。磁気飽和（Bが頭打ちになる領域）とヒステリシス（磁化の履歴効果）を表す。鉄心設計・トランス効率の基礎。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="_17">ベクトル合成（フェーザー図）<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ベクトルゴウセイ / <strong>英語</strong>: Phasor Diagram
-フェーザーを2次元平面に描き、振幅と位相の関係を視覚化する図。直角三角形や余弦定理を使って合成インピーダンス・合成電圧を求める。三相交流で「<span class="arithmatex">\(\sqrt{3}\)</span> 倍」が出てくる幾何学的根拠もここで理解できる。</p>
+フェーザーを2次元平面に描き、振幅と位相の関係を視覚化する図。直角三角形や余弦定理を使って合成インピーダンス・合成電圧を求める。三相交流で「<span class="arithmatex">\(\sqrt{3}\)</span> 倍」が出てくる幾何学的根拠もここで理解できる。
+→ <a href="../../themes/kouryu-denryoku/">交流電力</a></p>
 <h3 id="s">皮相電力（<abbr title="皮相電力 (Apparent Power) [VA]">S</abbr>）<a class="headerlink" href="#s" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ヒソウデンリョク / <strong>英語</strong>: Apparent Power
-電圧と電流の積。 <span class="arithmatex">\(S = VI\)</span> [<abbr title="ボルトアンペア — 皮相電力の単位">VA</abbr>]。有効電力と無効電力のベクトル和：<span class="arithmatex">\(S = \sqrt{P^2 + Q^2}\)</span>。</p>
+電圧と電流の積。 <span class="arithmatex">\(S = VI\)</span> [<abbr title="ボルトアンペア — 皮相電力の単位">VA</abbr>]。有効電力と無効電力のベクトル和：<span class="arithmatex">\(S = \sqrt{P^2 + Q^2}\)</span>。
+→ <a href="../../themes/kouryu-denryoku/">交流電力</a></p>
 <h3 id="_18">誘電率（ε）<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ユウデンリツ / <strong>英語</strong>: Permittivity
-電界の通りやすさを表す材料定数。 <span class="arithmatex">\(\varepsilon = \varepsilon_0 \varepsilon_r\)</span> [F/m]。真空の誘電率 <span class="arithmatex">\(\varepsilon_0 = 8.85 \times 10^{-12}\)</span> F/m。</p>
+電界の通りやすさを表す材料定数。 <span class="arithmatex">\(\varepsilon = \varepsilon_0 \varepsilon_r\)</span> [F/m]。真空の誘電率 <span class="arithmatex">\(\varepsilon_0 = 8.85 \times 10^{-12}\)</span> F/m。
+→ <a href="../../themes/seidenki/">静電気</a></p>
 <h3 id="_19">フェーザー<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: フェーザー / <strong>英語</strong>: Phasor
-正弦波交流を複素数で表現したもの。大きさ（実効値または最大値）と位相角を持つ。回路方程式を代数的に解ける。</p>
+正弦波交流を複素数で表現したもの。大きさ（実効値または最大値）と位相角を持つ。回路方程式を代数的に解ける。
+→ <a href="../../themes/kouryu-kiso/">交流回路基礎</a></p>
 <h3 id="_20">複素インピーダンス<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: フクソインピーダンス / <strong>英語</strong>: Complex Impedance
-<span class="arithmatex">\(Z = R + jX\)</span>（<span class="arithmatex">\(R\)</span> は抵抗成分、<span class="arithmatex">\(X\)</span> はリアクタンス成分）。絶対値 <span class="arithmatex">\(|Z| = \sqrt{R^2 + X^2}\)</span>、偏角が位相差を与える。</p>
+<span class="arithmatex">\(Z = R + jX\)</span>（<span class="arithmatex">\(R\)</span> は抵抗成分、<span class="arithmatex">\(X\)</span> はリアクタンス成分）。絶対値 <span class="arithmatex">\(|Z| = \sqrt{R^2 + X^2}\)</span>、偏角が位相差を与える。
+→ <a href="../../themes/rlc-kairo/">RLC回路</a></p>
 <h3 id="_21">ヒステリシス損<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ヒステリシスソン / <strong>英語</strong>: Hysteresis Loss
-磁性材料が交流磁界を受けるとき、磁化の向きが反転するたびに発生する熱損失。鉄心損失の一つ。</p>
+磁性材料が交流磁界を受けるとき、磁化の向きが反転するたびに発生する熱損失。鉄心損失の一つ。
+→ <a href="../../themes/jiki-kairo/">磁気回路</a></p>
 <h3 id="p">有効電力（P）<a class="headerlink" href="#p" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ユウコウデンリョク / <strong>英語</strong>: Active Power
-実際に仕事をする電力。 <span class="arithmatex">\(P = VI\cos\varphi = I^2 R\)</span> [W]。抵抗で消費される。</p>
+実際に仕事をする電力。 <span class="arithmatex">\(P = VI\cos\varphi = I^2 R\)</span> [W]。抵抗で消費される。
+→ <a href="../../themes/kouryu-denryoku/">交流電力</a></p>
 <hr />
 <h2 id="_22">マ行<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
 <h3 id="q_1">無効電力（<abbr title="無効電力 (Reactive Power) [var] または 電荷 (Electric Charge) [C]">Q</abbr>）<a class="headerlink" href="#q_1" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ムコウデンリョク / <strong>英語</strong>: Reactive Power
-エネルギーを蓄放するだけで仕事をしない電力。 <span class="arithmatex">\(Q = VI\sin\varphi\)</span> [<abbr title="バール (Volt-Ampere Reactive) — 無効電力の単位">var</abbr>]。コイルは正、コンデンサは負の無効電力を持つ。</p>
+エネルギーを蓄放するだけで仕事をしない電力。 <span class="arithmatex">\(Q = VI\sin\varphi\)</span> [<abbr title="バール (Volt-Ampere Reactive) — 無効電力の単位">var</abbr>]。コイルは正、コンデンサは負の無効電力を持つ。
+→ <a href="../../themes/kouryu-denryoku/">交流電力</a></p>
 <hr />
 <h2 id="_23">ラ行<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
 <h3 id="_24">ローレンツ力<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: ローレンツりょく / <strong>英語</strong>: Lorentz Force
-電荷を持つ粒子が電磁界から受ける力。導体では <span class="arithmatex">\(F = BIL\sin\theta\)</span> [N]（<span class="arithmatex">\(\theta\)</span> は電流と磁界のなす角）。電動機の回転力・ホール効果でのキャリア偏向の機構。</p>
+電荷を持つ粒子が電磁界から受ける力。導体では <span class="arithmatex">\(F = BIL\sin\theta\)</span> [N]（<span class="arithmatex">\(\theta\)</span> は電流と磁界のなす角）。電動機の回転力・ホール効果でのキャリア偏向の機構。
+→ <a href="../../themes/denjiryoku/">電磁力</a></p>
 <h3 id="x">リアクタンス（X）<a class="headerlink" href="#x" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: リアクタンス / <strong>英語</strong>: Reactance
-交流回路のコイル・コンデンサによる抵抗成分。 <span class="arithmatex">\(X_L = \omega L\)</span>、<span class="arithmatex">\(X_C = 1/(\omega C)\)</span> [Ω]。周波数に依存する。</p>
+交流回路のコイル・コンデンサによる抵抗成分。 <span class="arithmatex">\(X_L = \omega L\)</span>、<span class="arithmatex">\(X_C = 1/(\omega C)\)</span> [Ω]。周波数に依存する。
+→ <a href="../../themes/rlc-kairo/">RLC回路</a></p>
 <h3 id="cos">力率（cos <abbr title="位相角 (Phase Angle) — 電圧と電流の波形のズレを角度で表す。力率 cosφ を決める">φ</abbr>）<a class="headerlink" href="#cos" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: リキリツ / <strong>英語</strong>: Power Factor
-有効電力と皮相電力の比。 <span class="arithmatex">\(\cos\varphi = P/S\)</span>。1に近いほど効率が良い。遅れ（コイル）・進み（コンデンサ）で符号が変わる。</p>
+有効電力と皮相電力の比。 <span class="arithmatex">\(\cos\varphi = P/S\)</span>。1に近いほど効率が良い。遅れ（コイル）・進み（コンデンサ）で符号が変わる。
+→ <a href="../../themes/kouryu-denryoku/">交流電力</a></p>
 <h3 id="_25">理想電圧源<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: リソウデンアツゲン / <strong>英語</strong>: Ideal Voltage Source
-内部抵抗ゼロで、負荷に関わらず一定電圧を供給する電源モデル。テブナン等価変換の出力側に現れる。</p>
+内部抵抗ゼロで、負荷に関わらず一定電圧を供給する電源モデル。テブナン等価変換の出力側に現れる。
+→ <a href="../../themes/chokuryu-kairo/">直流回路</a></p>
 <h3 id="_26">理想電流源<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: リソウデンリュウゲン / <strong>英語</strong>: Ideal Current Source
-内部抵抗無限大で、負荷に関わらず一定電流を供給する電源モデル。ノートン等価変換の出力側に現れる。</p>
+内部抵抗無限大で、負荷に関わらず一定電流を供給する電源モデル。ノートン等価変換の出力側に現れる。
+→ <a href="../../themes/chokuryu-kairo/">直流回路</a></p>
 <h3 id="_27">レンツの法則<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
 <p><strong>読み</strong>: レンツノホウソク / <strong>英語</strong>: Lenz's Law
-電磁誘導で発生する誘導電流は、磁束の変化を妨げる向きに流れる。ファラデーの法則の符号（マイナス）の物理的意味。</p>
+電磁誘導で発生する誘導電流は、磁束の変化を妨げる向きに流れる。ファラデーの法則の符号（マイナス）の物理的意味。
+→ <a href="../../themes/inductance/">インダクタンス</a></p>
 <hr />
 <blockquote>
 <p><strong>使い方のヒント</strong>: 問題を解いていて意味が曖昧な用語に出会ったらこのページへ。用語の定義を確認してから計算に入ると式の意味が理解しやすくなる。</p>

@@ -93,11 +93,30 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-  <a href="https://kfurufuru.github.io/denken-wiki/"
-     style="font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
-    📗 法規Wiki へ移動
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-  </a>
+  <div style="display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; padding:2px 0;">
+    <a href="https://kfurufuru.github.io/secretary-portal/" style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:4px; padding:2px 10px; font-size:0.82rem;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">← ポータル</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <span style="font-size:0.78rem; color:rgba(255,255,255,0.6); margin-right:4px;">電験3種 :</span>
+    <a href="https://kfurufuru.github.io/denken-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      📗 法規Wiki
+    </a>
+    <span style="font-weight:700; color:#fff; background:rgba(255,255,255,0.25); border-radius:4px; padding:2px 10px; font-size:0.82rem;">
+      📘 理論Wiki
+    </span>
+    <a href="https://kfurufuru.github.io/denken-wiki-denryoku/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      ⚡ 電力Wiki
+    </a>
+    <span style="color:rgba(255,255,255,0.4); margin:0 2px;">|</span>
+    <a href="https://kfurufuru.github.io/ei-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      🔧 電気計装Wiki
+    </a>
+  </div>
 
           </div>
           
@@ -810,7 +829,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 直感的理解
+        🧠 原理（なぜ起きるか）
       
     </span>
   </a>
@@ -821,12 +840,12 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 公式の意味マップ
+        📐 公式（どう計算するか）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+    <nav class="md-nav" aria-label="📐 公式（どう計算するか）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2259,7 +2278,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 直感的理解
+        🧠 原理（なぜ起きるか）
       
     </span>
   </a>
@@ -2270,12 +2289,12 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 公式の意味マップ
+        📐 公式（どう計算するか）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+    <nav class="md-nav" aria-label="📐 公式（どう計算するか）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2683,18 +2702,38 @@
 
 
 <h1 id="_1">⚡ 直流回路（オーム・キルヒホッフ・テブナン）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">📍 学習マップ上の現在地</p>
+<p><strong>前提</strong> → （最初）　→　<strong>[直流回路]（現在地）</strong>　→　<strong>次</strong> → <a href="../kouryu-kiso/">交流回路基礎</a></p>
+<table>
+<thead>
+<tr>
+<th>重要度</th>
+<th>頻出論点</th>
+<th>バージョン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><abbr title="皮相電力 (Apparent Power) [VA]">S</abbr></strong></td>
+<td>オーム則 / キルヒホッフ / テブナン / 重ね合わせ</td>
+<td>v0.7 ✅</td>
+</tr>
+</tbody>
+</table>
+</div>
 <blockquote>
 <p>直流回路の問題は「どこに何Vかかり、何Aが流れるか」を求める問題。オーム・<abbr title="キルヒホッフ電圧則 (Kirchhoff's Voltage Law) — 閉ループ電圧の代数和=0">KVL</abbr>・<abbr title="キルヒホッフ電流則 (Kirchhoff's Current Law) — 節点電流の代数和=0">KCL</abbr>・テブナンの4本柱で9割が解ける。</p>
 </blockquote>
 <hr />
-<h2 id="_2">🧠 直感的理解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">🧠 原理（なぜ起きるか）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>電流は水流、電圧は水圧、抵抗は管の細さ。管が細いほど流れにくく、太い管が並列にあれば水（電流）は太い方に多く流れる。この3つの対応が直流回路全体の直感的基盤になる。</p>
 <div class="admonition tip">
 <p class="admonition-title">5秒で思い出す</p>
 <p><mark><strong>V = IR ── 電圧＝抵抗×電流。蛇口を絞ると（<abbr title="抵抗 (Resistance) [Ω]">R</abbr>↑）、圧力差（V）が生まれる</strong></mark></p>
 </div>
 <hr />
-<h2 id="_3">🔍 公式の意味マップ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">📐 公式（どう計算するか）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="a3">レイヤーA：基本3則（全回路に共通）<a class="headerlink" href="#a3" title="Permanent link">&para;</a></h3>
 <table>
 <thead>

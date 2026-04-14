@@ -93,11 +93,30 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-  <a href="https://kfurufuru.github.io/denken-wiki/"
-     style="font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
-    📗 法規Wiki へ移動
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-  </a>
+  <div style="display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; padding:2px 0;">
+    <a href="https://kfurufuru.github.io/secretary-portal/" style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:4px; padding:2px 10px; font-size:0.82rem;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">← ポータル</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <span style="font-size:0.78rem; color:rgba(255,255,255,0.6); margin-right:4px;">電験3種 :</span>
+    <a href="https://kfurufuru.github.io/denken-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      📗 法規Wiki
+    </a>
+    <span style="font-weight:700; color:#fff; background:rgba(255,255,255,0.25); border-radius:4px; padding:2px 10px; font-size:0.82rem;">
+      📘 理論Wiki
+    </span>
+    <a href="https://kfurufuru.github.io/denken-wiki-denryoku/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      ⚡ 電力Wiki
+    </a>
+    <span style="color:rgba(255,255,255,0.4); margin:0 2px;">|</span>
+    <a href="https://kfurufuru.github.io/ei-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      🔧 電気計装Wiki
+    </a>
+  </div>
 
           </div>
           
@@ -1264,7 +1283,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 直感的理解
+        🧠 原理（なぜ起きるか）
       
     </span>
   </a>
@@ -1275,12 +1294,12 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 公式の意味マップ
+        📐 公式（どう計算するか）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+    <nav class="md-nav" aria-label="📐 公式（どう計算するか）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2198,7 +2217,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 直感的理解
+        🧠 原理（なぜ起きるか）
       
     </span>
   </a>
@@ -2209,12 +2228,12 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 公式の意味マップ
+        📐 公式（どう計算するか）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+    <nav class="md-nav" aria-label="📐 公式（どう計算するか）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2561,10 +2580,30 @@
 
 
 <h1 id="_1">💡 半導体<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">📍 学習マップ上の現在地</p>
+<p><strong>前提</strong> → （最初）　→　<strong>[半導体]（現在地）</strong>　→　<strong>次</strong> → <a href="../transistor/">トランジスタ・<abbr title="電界効果トランジスタ (Field Effect Transistor)">FET</abbr></a></p>
+<table>
+<thead>
+<tr>
+<th>重要度</th>
+<th>頻出論点</th>
+<th>バージョン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>PN接合 / ダイオード特性 / 整流回路</td>
+<td>v0.7 ✅</td>
+</tr>
+</tbody>
+</table>
+</div>
 <blockquote>
 <p>条件によって導体にも絶縁体にもなれる物質。ドーピングとPN接合で「電流の弁」を作る。</p>
 </blockquote>
-<h2 id="_2">🧠 直感的理解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">🧠 原理（なぜ起きるか）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
 <li>純粋なシリコンはほぼ絶縁体。そこに微量の不純物（ドーパント）を加えると電気的性質が激変する。これがドーピング。<mark>N型とP型を接合させると、電流を一方向にしか通さないダイオードができる。</mark></li>
 <li>バルブ（弁）のアナロジーが使える。弁は一方向には水を通し、逆方向には通さない。ダイオードはまさに電流の弁。</li>
@@ -2573,7 +2612,7 @@
 <p class="admonition-title">5秒で思い出す</p>
 <p>半導体 ＝ 不純物で性質が変わる「変化できる素材」。PN接合 ＝ 電流の一方通行弁。</p>
 </div>
-<h2 id="_3">🔍 公式の意味マップ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">📐 公式（どう計算するか）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="a">レイヤーA：基本概念<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
 <table>
 <thead>

@@ -93,11 +93,30 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-  <a href="https://kfurufuru.github.io/denken-wiki/"
-     style="font-weight:600; color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
-    📗 法規Wiki へ移動
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-  </a>
+  <div style="display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; padding:2px 0;">
+    <a href="https://kfurufuru.github.io/secretary-portal/" style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:4px; padding:2px 10px; font-size:0.82rem;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">← ポータル</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <span style="font-size:0.78rem; color:rgba(255,255,255,0.6); margin-right:4px;">電験3種 :</span>
+    <a href="https://kfurufuru.github.io/denken-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      📗 法規Wiki
+    </a>
+    <span style="font-weight:700; color:#fff; background:rgba(255,255,255,0.25); border-radius:4px; padding:2px 10px; font-size:0.82rem;">
+      📘 理論Wiki
+    </span>
+    <a href="https://kfurufuru.github.io/denken-wiki-denryoku/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      ⚡ 電力Wiki
+    </a>
+    <span style="color:rgba(255,255,255,0.4); margin:0 2px;">|</span>
+    <a href="https://kfurufuru.github.io/ei-wiki/"
+       style="font-weight:600; color:#fff; text-decoration:none; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.35); border-radius:4px; padding:2px 10px; font-size:0.82rem;"
+       onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      🔧 電気計装Wiki
+    </a>
+  </div>
 
           </div>
           
@@ -866,7 +885,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 直感的理解
+        🧠 原理（なぜ起きるか）
       
     </span>
   </a>
@@ -877,12 +896,12 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 公式の意味マップ
+        📐 公式（どう計算するか）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+    <nav class="md-nav" aria-label="📐 公式（どう計算するか）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2115,7 +2134,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧠 直感的理解
+        🧠 原理（なぜ起きるか）
       
     </span>
   </a>
@@ -2126,12 +2145,12 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 公式の意味マップ
+        📐 公式（どう計算するか）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 公式の意味マップ">
+    <nav class="md-nav" aria-label="📐 公式（どう計算するか）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2402,11 +2421,31 @@
 
 
 <h1 id="rlc">⚙️ RLC回路<a class="headerlink" href="#rlc" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">📍 学習マップ上の現在地</p>
+<p><strong>前提</strong> → <a href="../kouryu-kiso/">交流回路基礎</a>　→　<strong>[RLC回路]（現在地）</strong>　→　<strong>次</strong> → <a href="../kouryu-denryoku/">交流電力</a></p>
+<table>
+<thead>
+<tr>
+<th>重要度</th>
+<th>頻出論点</th>
+<th>バージョン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><abbr title="皮相電力 (Apparent Power) [VA]">S</abbr></strong></td>
+<td>インピーダンス / 共振 / <abbr title="品質係数 (Quality Factor) — 共振の鋭さを表す無次元数">Q値</abbr> / 直並列</td>
+<td>v0.7 ✅</td>
+</tr>
+</tbody>
+</table>
+</div>
 <blockquote>
 <p>RLC回路の解析手法。インピーダンス合成・共振条件・Q値を理解することで、フィルタ設計や電力品質の問題に対応できる。</p>
 </blockquote>
 <hr />
-<h2 id="_1">🧠 直感的理解<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">🧠 原理（なぜ起きるか）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>RLC回路は<strong>バネ（<abbr title="静電容量 (Capacitance) [F]">C</abbr>）・質量（<abbr title="インダクタンス (Inductance) [H]">L</abbr>）・ダンパー（<abbr title="抵抗 (Resistance) [Ω]">R</abbr>）</strong>の機械振動系と数学的に同型。共振はブランコが最大に揺れる状態。</li>
 <li><strong>共振</strong>：<span class="arithmatex">\(X_L = X_C\)</span> のとき、インピーダンスが最小（直列）または最大（並列）になり、電流・電圧が極端な挙動を示す。</li>
@@ -2417,7 +2456,7 @@
 <p><mark>共振条件は <span class="arithmatex">\(X_L = X_C\)</span></mark>、つまり <span class="arithmatex">\(\omega L = 1/(\omega C)\)</span>。これを解くと <mark><span class="arithmatex">\(\omega_0 = 1/\sqrt{LC}\)</span></mark>。</p>
 </div>
 <hr />
-<h2 id="_2">🔍 公式の意味マップ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">📐 公式（どう計算するか）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="a">レイヤーA：基本概念<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
