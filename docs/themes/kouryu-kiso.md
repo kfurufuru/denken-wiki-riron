@@ -6,6 +6,7 @@ difficulty: ★★★★
 exam_frequency: 高
 analogy_type: wave（波）
 version: v0.7
+exam_importance_rank: S
 ---
 
 # 🌊 交流回路基礎

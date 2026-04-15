@@ -6,9 +6,10 @@ difficulty: ★★★
 exam_frequency: 高
 analogy_type: gravity
 version: v0.7
+exam_importance_rank: A
 ---
 
-# ⚡ 静電気
+# 💛💛 静電気 (A rank - ★★ 頻出)
 
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → （最初）　→　**[静電気]（現在地）**　→　**次** → [コンデンサ](condenser.md)

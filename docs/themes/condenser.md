@@ -6,6 +6,7 @@ difficulty: ★★★
 exam_frequency: 高
 analogy_type: water-tank
 version: v0.7
+exam_importance_rank: S
 ---
 
 # 🔋 コンデンサ

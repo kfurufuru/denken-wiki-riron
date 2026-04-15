@@ -6,6 +6,7 @@ difficulty: ★★★★
 exam_frequency: 中（2年に1回以上）
 analogy_type: faucet
 version: v0.7
+exam_importance_rank: B
 ---
 
 # 🔌 トランジスタ・FET

@@ -6,6 +6,7 @@ difficulty: ★★★
 exam_frequency: 低（出たら取れる）
 analogy_type: balance
 version: v0.7
+exam_importance_rank: B
 ---
 
 # ⚖️ ブリッジ回路

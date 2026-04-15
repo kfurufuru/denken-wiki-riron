@@ -6,9 +6,10 @@ difficulty: ★★★
 exam_frequency: 高
 analogy_type: right-hand
 version: v0.7
+exam_importance_rank: A
 ---
 
-# ⚡ 電磁力
+# 💛💛 電磁力 (A rank - ★ 準頻出)
 
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → [コンデンサ](condenser.md)　→　**[電磁力]（現在地）**　→　**次** → [磁気回路](jiki-kairo.md)

@@ -6,6 +6,7 @@ difficulty: ★★★★
 exam_frequency: 中
 analogy_type: filling
 version: v0.7
+exam_importance_rank: B
 ---
 
 # 🌊 過渡現象

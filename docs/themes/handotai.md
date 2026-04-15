@@ -6,6 +6,7 @@ difficulty: ★★★
 exam_frequency: 中（毎回1問）
 analogy_type: valve
 version: v0.7
+exam_importance_rank: B
 ---
 
 # 💡 半導体

@@ -6,9 +6,10 @@ difficulty: ★★★★★
 exam_frequency: 高（B問題で10点）
 analogy_type: three-phase
 version: v0.7
+exam_importance_rank: S
 ---
 
-# ⚡ 三相交流
+# ⭐⭐ 三相交流 (S rank - ★★ 頻出)
 
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → [交流回路基礎](kouryu-kiso.md) / [RLC回路](rlc-kairo.md) / [交流電力](kouryu-denryoku.md)　→　**⚡ 三相交流（現在地）**　→　**次** → [過渡現象](kato-gensho.md)

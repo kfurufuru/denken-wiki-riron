@@ -6,6 +6,7 @@ difficulty: ★★★★★
 exam_frequency: 高
 analogy_type: mechanical（機械的振動：バネ・質量・ダンパー）
 version: v0.7
+exam_importance_rank: S
 ---
 
 # ⚙️ RLC回路

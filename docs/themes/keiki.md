@@ -6,6 +6,7 @@ difficulty: ★★★
 exam_frequency: 低（年度差が大きい）
 analogy_type: pointer
 version: v0.7
+exam_importance_rank: A
 ---
 
 # 📏 計器の原理と測定法

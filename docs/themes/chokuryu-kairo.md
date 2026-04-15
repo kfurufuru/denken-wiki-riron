@@ -6,9 +6,10 @@ difficulty: ★★★
 exam_frequency: 高
 analogy_type: water-flow
 version: v0.7
+exam_importance_rank: S
 ---
 
-# ⚡ 直流回路（オーム・キルヒホッフ・テブナン）
+# ⭐⭐⭐ 直流回路（オーム・キルヒホッフ・テブナン） (S rank - ★★★ 超頻出)
 
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → （最初）　→　**[直流回路]（現在地）**　→　**次** → [交流回路基礎](kouryu-kiso.md)

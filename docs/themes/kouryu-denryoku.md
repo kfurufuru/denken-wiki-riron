@@ -6,9 +6,10 @@ difficulty: ★★★★
 exam_frequency: 高
 analogy_type: work（仕事・エネルギーのアナロジー）
 version: v0.7
+exam_importance_rank: A
 ---
 
-# ⚡ 交流電力
+# 💛💛 交流電力 (A rank - ★★ 頻出)
 
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → [RLC回路](rlc-kairo.md)　→　**[交流電力]（現在地）**　→　**次** → [三相交流](sansou-kouryu.md)

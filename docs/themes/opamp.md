@@ -6,6 +6,7 @@ difficulty: ★★★
 exam_frequency: 低（パターン固定で得点源）
 analogy_type: ideal-amplifier
 version: v0.7
+exam_importance_rank: B
 ---
 
 # 🔌 オペアンプ
