@@ -44,6 +44,7 @@ theme:
 plugins:
   - search:
       lang: ja
+      separator: '[\s\-\.\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff]+'
   - tags
 
 markdown_extensions:
@@ -77,6 +78,8 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/progress-tracker.js
 
 extra_css:
   - stylesheets/custom.css

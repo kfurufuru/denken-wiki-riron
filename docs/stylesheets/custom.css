@@ -128,3 +128,26 @@
     padding: 0.5em 0;
   }
 }
+
+/* =============================================
+   進捗トラッカー スタイル
+   ============================================= */
+.progress-tracker {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s;
+}
+
+.progress-tracker:hover {
+  opacity: 0.85;
+}

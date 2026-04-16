@@ -21,6 +21,47 @@ tags: [テーマ一覧]
 
 各分野の過去問マッピングは [過去問インデックス](../kakomon/index.md) を参照。
 
+### 依存関係グラフ
+
+各テーマの依存関係を視覚化したものです。矢印の方向に沿って学習すると知識が積み上がります。
+
+```mermaid
+graph TD
+    DC[直流回路<br>★★☆ 🔴最優先] --> AC[交流回路基礎<br>★★☆ 🔴最優先]
+    DC --> EM[電磁力<br>★★☆ 🟡重要]
+    DC --> SE[静電気<br>★★☆ 🔴最優先]
+    AC --> RLC[RLC回路<br>★★★ 🔴最優先]
+    AC --> AP[交流電力<br>★★☆ 🔴最優先]
+    AC --> SA[三相交流<br>★★★ 🔴最優先]
+    AC --> TR[過渡現象<br>★★★ 🟡重要]
+    SE --> CD[コンデンサ<br>★★☆ 🔴最優先]
+    EM --> MC[磁気回路<br>★★★ 🟡重要]
+    MC --> IL[インダクタンス<br>★★★ 🟡重要]
+    IL --> TR
+    DC --> SC[半導体<br>★★☆ 🟡重要]
+    SC --> TF[トランジスタ・FET<br>★★★ 🟡重要]
+    TF --> OP[オペアンプ<br>★★★ 🟢余裕があれば]
+    DC --> KI[計器の原理<br>★★☆ 🟡重要]
+    DC --> BR[ブリッジ回路<br>★★☆ 🟡重要]
+
+    style DC fill:#ff5252,color:#fff
+    style AC fill:#ff5252,color:#fff
+    style RLC fill:#ff5252,color:#fff
+    style AP fill:#ff5252,color:#fff
+    style SA fill:#ff5252,color:#fff
+    style SE fill:#ff5252,color:#fff
+    style CD fill:#ff5252,color:#fff
+    style TR fill:#ffab40,color:#fff
+    style EM fill:#ffab40,color:#fff
+    style MC fill:#ffab40,color:#fff
+    style IL fill:#ffab40,color:#fff
+    style SC fill:#ffab40,color:#fff
+    style TF fill:#ffab40,color:#fff
+    style KI fill:#ffab40,color:#fff
+    style BR fill:#ffab40,color:#fff
+    style OP fill:#69f0ae,color:#333
+```
+
 ---
 
 ## テーマ一覧表
