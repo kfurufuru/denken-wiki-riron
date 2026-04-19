@@ -128,6 +128,7 @@ nav:
     - 年度別一覧: kakomon/by-year.md
     - 分野別一覧: kakomon/by-field.md
     - 再出題ランキング: kakomon/reuse-ranking.md
+    - 出題周期・波分析: kakomon/wave-analysis.md
   - リファレンス:
     - reference/index.md
     - 頻出公式一覧: reference/formulas.md
