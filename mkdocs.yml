@@ -100,7 +100,7 @@ nav:
   - テーマ別:
     - themes/index.md
     - 電気回路:
-      - themes/denki-kairo-index.md
+      - themes/denki-kairo/index.md
       - 直流回路: themes/chokuryu-kairo.md
       - 交流回路基礎: themes/kouryu-kiso.md
       - RLC回路: themes/rlc-kairo.md
@@ -108,19 +108,19 @@ nav:
       - 三相交流: themes/sansou-kouryu.md
       - 過渡現象: themes/kato-gensho.md
     - 電磁気:
-      - themes/denjiryoku-index.md
+      - themes/denjiryoku-group/index.md
       - 静電気: themes/seidenki.md
       - コンデンサ: themes/condenser.md
       - 電磁力: themes/denjiryoku.md
       - 磁気回路: themes/jiki-kairo.md
       - インダクタンス: themes/inductance.md
     - 電子理論:
-      - themes/denshi-riron-index.md
+      - themes/denshi-riron/index.md
       - 半導体: themes/handotai.md
       - トランジスタ・FET: themes/transistor.md
       - オペアンプ: themes/opamp.md
     - 電気計測:
-      - themes/denki-keisoku-index.md
+      - themes/denki-keisoku/index.md
       - 計器の原理: themes/keiki.md
       - ブリッジ回路: themes/bridge.md
   - 過去問マッピング:

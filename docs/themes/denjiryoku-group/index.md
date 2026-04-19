@@ -12,11 +12,11 @@ tags: [電磁気, グループ概要]
 
 | # | テーマ | 難易度 | 優先度 | リンク |
 |---|---|---|---|---|
-| 7 | 静電気 | ★★☆ | 🔴 最優先 | [seidenki](seidenki.md) |
-| 8 | コンデンサ | ★★☆ | 🔴 最優先 | [condenser](condenser.md) |
-| 9 | 電磁力 | ★★☆ | 🟡 重要 | [denjiryoku](denjiryoku.md) |
-| 10 | 磁気回路 | ★★★ | 🟡 重要 | [jiki-kairo](jiki-kairo.md) |
-| 11 | インダクタンス | ★★★ | 🟡 重要 | [inductance](inductance.md) |
+| 7 | 静電気 | ★★☆ | 🔴 最優先 | [seidenki](../seidenki.md) |
+| 8 | コンデンサ | ★★☆ | 🔴 最優先 | [condenser](../condenser.md) |
+| 9 | 電磁力 | ★★☆ | 🟡 重要 | [denjiryoku](../denjiryoku.md) |
+| 10 | 磁気回路 | ★★★ | 🟡 重要 | [jiki-kairo](../jiki-kairo.md) |
+| 11 | インダクタンス | ★★★ | 🟡 重要 | [inductance](../inductance.md) |
 
 ---
 

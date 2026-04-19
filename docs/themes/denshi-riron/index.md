@@ -12,9 +12,9 @@ tags: [電子理論, グループ概要]
 
 | # | テーマ | 難易度 | 優先度 | リンク |
 |---|---|---|---|---|
-| 12 | 半導体 | ★★☆ | 🟡 重要 | [handotai](handotai.md) |
-| 13 | トランジスタ・FET | ★★★ | 🟡 重要 | [transistor](transistor.md) |
-| 14 | オペアンプ | ★★★ | 🟢 余裕があれば | [opamp](opamp.md) |
+| 12 | 半導体 | ★★☆ | 🟡 重要 | [handotai](../handotai.md) |
+| 13 | トランジスタ・FET | ★★★ | 🟡 重要 | [transistor](../transistor.md) |
+| 14 | オペアンプ | ★★★ | 🟢 余裕があれば | [opamp](../opamp.md) |
 
 ---
 

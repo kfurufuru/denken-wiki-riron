@@ -12,12 +12,12 @@ tags: [電気回路, グループ概要]
 
 | # | テーマ | 難易度 | 優先度 | リンク |
 |---|---|---|---|---|
-| 1 | 直流回路 | ★★☆ | 🔴 最優先 | [chokuryu-kairo](chokuryu-kairo.md) |
-| 2 | 交流回路基礎 | ★★☆ | 🔴 最優先 | [kouryu-kiso](kouryu-kiso.md) |
-| 3 | RLC回路 | ★★★ | 🔴 最優先 | [rlc-kairo](rlc-kairo.md) |
-| 4 | 交流電力 | ★★☆ | 🔴 最優先 | [kouryu-denryoku](kouryu-denryoku.md) |
-| 5 | 三相交流 | ★★★ | 🔴 最優先 | [sansou-kouryu](sansou-kouryu.md) |
-| 6 | 過渡現象 | ★★★ | 🟡 重要 | [kato-gensho](kato-gensho.md) |
+| 1 | 直流回路 | ★★☆ | 🔴 最優先 | [chokuryu-kairo](../chokuryu-kairo.md) |
+| 2 | 交流回路基礎 | ★★☆ | 🔴 最優先 | [kouryu-kiso](../kouryu-kiso.md) |
+| 3 | RLC回路 | ★★★ | 🔴 最優先 | [rlc-kairo](../rlc-kairo.md) |
+| 4 | 交流電力 | ★★☆ | 🔴 最優先 | [kouryu-denryoku](../kouryu-denryoku.md) |
+| 5 | 三相交流 | ★★★ | 🔴 最優先 | [sansou-kouryu](../sansou-kouryu.md) |
+| 6 | 過渡現象 | ★★★ | 🟡 重要 | [kato-gensho](../kato-gensho.md) |
 
 ---
 
