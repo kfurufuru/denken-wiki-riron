@@ -160,7 +160,6 @@ R3上期〜R7下期の **直近10回分** を最優先で解く。
 
 - [攻略・直前対策トップ](index.md)
 - [直前3日チェックリスト](last-3days.md)
-- [引っかけパターン集](hikkkake-patterns.md)
 - [再出題ランキング](../kakomon/reuse-ranking.md)
 - [出題周期・波分析](../kakomon/wave-analysis.md)
 
