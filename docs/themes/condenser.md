@@ -11,6 +11,10 @@ exam_importance_rank: S
 
 # 🔋 コンデンサ
 
+!!! info "📘 このページは深掘り正典です"
+    **役割分離**: 本ページ（denken-wiki-riron）は原理・誘電体挙動・球形コンデンサ等の**深掘り解説**を担う。試験N日前の**要点・公式・引っかけ確認**は → [secretary-portal #capacitor](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor) へ。
+    **進捗管理**: 4ボタンセルフチェックは secretary 側に一本化。本ページに進捗UIは持たない。
+
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → [静電気](seidenki.md)　→　**[コンデンサ]（現在地）**　→　**次** → [電磁力](denjiryoku.md)
 
@@ -22,7 +26,7 @@ exam_importance_rank: S
 
 ---
 
-## 🧠 原理（なぜ起きるか）
+## 🧠 原理（なぜ起きるか） {#principle}
 
 - コンデンサは電荷を溜める**水槽**。容量 $C$ [F] が水槽のサイズ、電圧 $V$ [V] が水位、電荷 $Q$ [C] が溜まった水の量。
 - エネルギーは**電界に蓄えられる**（電池は化学エネルギー、コンデンサは電界エネルギー）。電流が切れた後も電界が残る。
@@ -34,7 +38,7 @@ exam_importance_rank: S
 
 ---
 
-## 📐 公式（どう計算するか）
+## 📐 公式（どう計算するか） {#formulas}
 
 ### レイヤーA：基本概念
 
@@ -55,9 +59,11 @@ exam_importance_rank: S
 | 直列のとき $Q_1 = Q_2 = Q$ | 直列接続では各コンデンサの電荷が等しい（電荷保存） | 直列接続・初期電荷ゼロ | 初期電荷あり・並列接続 |
 | $V = V_1 + V_2$ | 直列のとき電圧が分担される | 直列接続 | — |
 
+[↩ 直前ハブで「公式」要点だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor){ .md-button target=_blank rel=noopener }
+
 ---
 
-## 📊 比較表
+## 📊 比較表 {#comparison}
 
 ### 1. 直列 vs 並列（容量・電荷・電圧の分配）
 
@@ -149,9 +155,11 @@ exam_importance_rank: S
 
     > **物理的直感**: 導体板は「コンデンサを複数個直列に分割する仕切り」ではなく、「間隔を縮めた別のコンデンサを追加する」イメージ。金属板が増えるほど容量は大きくなる。
 
+[↩ 直前ハブで「比較表」要点だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor){ .md-button target=_blank rel=noopener }
+
 ---
 
-## 🕳️ よくある勘違いTOP3
+## 🕳️ よくある勘違いTOP3 {#traps}
 
 **❌ 1：コンデンサの直列・並列計算が抵抗と同じだと思いがち**
 
@@ -183,9 +191,11 @@ exam_importance_rank: S
     ✅ **正解の考え方**: F＝QEは「外部電界E中に置かれた点電荷Qに働く力」の式であり、コンデンサ極板には直接適用できない。極板自身が電界を作っているため、一方の極板が感じるのは「自分自身の電界を除いた、相手極板が作る電界」だけである。面電荷密度をσ＝Q/S[C/m²]とすると一枚の極板が作る電界はσ/(2ε₀)であり、もう一方の極板はその電界中にあるから力はF＝Q×σ/(2ε₀)＝σ²S/(2ε₀)となる。全電界Eに対してF＝QE/2（係数1/2）になることが本質。
     （H25問5・R03上問2 類出）
 
+[↩ 直前ハブで「引っかけ3つ」だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor){ .md-button target=_blank rel=noopener }
+
 ---
 
-## 🔄 解法フローチャート
+## 🔄 解法フローチャート {#flow}
 
 ```
 コンデンサの問題を見たら
@@ -282,7 +292,7 @@ exam_importance_rank: S
 
 ---
 
-## 🌐 球形コンデンサ（導体球・同心球）
+## 🌐 球形コンデンサ（導体球・同心球） {#sphere}
 
 !!! example "出題実績"
     - R06下 問2「地球を導体球と見なしたときの静電容量」
@@ -363,6 +373,15 @@ $$C = 4\pi\varepsilon_0\varepsilon_r \cdot \frac{ab}{b-a}$$
 
 ??? info "Level 3: 実務との接点 🏭"
     導体球モデルは同軸ケーブルの解析に応用される（同軸ケーブルは「同心円柱コンデンサ」として扱う）。高圧機器の避雷球・碍子の設計にも球の電界分布の知識が活きる。地球の静電容量（約 711 μF）は雷現象の電気的スケール感を掴む際の参考値として有用。
+
+---
+
+## 🔁 試験対策モードへ
+
+!!! tip "深掘り完了 → 直前ハブで定着確認"
+    本ページの深掘りが一通り終わったら、次は **試験対策モード** で要点・引っかけ・進捗管理（4ボタンセルフチェック）に進む。
+
+[↩ 直前ハブ #capacitor へ戻る](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor){ .md-button .md-button--primary target=_blank rel=noopener }
 
 ---
 
