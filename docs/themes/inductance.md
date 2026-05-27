@@ -11,6 +11,10 @@ exam_importance_rank: A
 
 # 🌀 インダクタンス
 
+!!! info "📘 このページは深掘り正典です"
+    **役割分離**: 本ページ（denken-wiki-riron）は環状鉄心コイルの L 計算手順・和動／差動の判別・結合係数の導出等の**深掘り解説**を担う。試験N日前の**要点・公式・引っかけ確認**は → [secretary-portal #inductance](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance) へ。
+    **進捗管理**: 4ボタンセルフチェック／概念問題TestWidgetは secretary 側に一本化。本ページに進捗UIは持たない。
+
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → [磁気回路](jiki-kairo.md)　→　**[インダクタンス]（現在地）**　→　**次** → [三相交流](sansou-kouryu.md)
 
@@ -92,6 +96,8 @@ exam_importance_rank: A
 
     **引っかかりやすいポイント**：==「直列接続だから単純に $L_1 + L_2$」と計算すると誤り==。相互結合がある場合は必ず $\pm 2M$ を加減する。
 
+[↩ 直前ハブで「公式」要点だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
+
 ## 📊 比較表
 
 ### コンデンサ vs インダクタ（双対関係）
@@ -131,6 +137,8 @@ exam_importance_rank: A
 
     **覚え方**：コンデンサの直列とインダクタの並列が「同じ形の式」、コンデンサの並列とインダクタの直列が「同じ形の式」になる（完全に入れ替わっている）。
 
+[↩ 直前ハブで「比較表」要点だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
+
 ## 🕳️ よくある勘違いTOP3
 
 **❌ こう思いがち①**: 自己誘導起電力のマイナス符号は計算上の話で、物理的意味はない
@@ -150,6 +158,8 @@ exam_importance_rank: A
 
 **❌ こう思いがち④**: 相互結合コイル回路の電圧計算では、自己インダクタンス分の電圧だけ考えればよい
 **✅ 実際は**: 相互結合がある場合、コイルの端子電圧は自己誘導（$L \frac{dI}{dt}$）と相互誘導（$M \frac{dI'}{dt}$）の両方を加減する必要がある。和動か差動かで符号が変わるため、向きの確認が必須。
+
+[↩ 直前ハブで「引っかけ4つ」だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
 
 ## 🧩 正答者 vs 誤答者
 
@@ -231,6 +241,15 @@ exam_importance_rank: A
 
 ??? info "Level 3: 実務との接点 🏭"
     変電所・工場の変圧器はインダクタンスの相互結合で電圧変換する。リアクトル（インダクタ）は系統の短絡電流制限や高調波フィルタに使う。現場では「インピーダンス %（%Z）」という形でインダクタンスを管理する。
+
+---
+
+## 🔁 試験対策モードへ
+
+!!! tip "深掘り完了 → 直前ハブで定着確認"
+    本ページの深掘りが一通り終わったら、次は **試験対策モード** で要点・引っかけ・進捗管理（4ボタンセルフチェック／概念TestWidget）に進む。
+
+[↩ 直前ハブ #inductance へ戻る](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button .md-button--primary target=_blank rel=noopener }
 
 ---
 
