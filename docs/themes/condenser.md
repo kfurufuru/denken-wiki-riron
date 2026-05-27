@@ -11,7 +11,16 @@ exam_importance_rank: S
 
 # 🔋 コンデンサ
 
-!!! info "📘 このページは深掘り正典です"
+!!! warning "📘 このページは新wikiに統合されました（2026-05-27）"
+    本ページの主要 content は [secretary-portal #capacitor](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor) に **3タブ構造（公式/解説/学習）** で統合されました。
+
+    - **公式タブ**: 基本公式・直並列合成・2種類誘電体挿入（縦/横）・導体板挿入・比較表
+    - **解説タブ**: 水槽 analogy・定電圧 vs 定電荷・引っかけ5項目（F=QE/2 含む）・拡張問い
+    - **学習タブ**: 例題・R06下問1 解法カード（4択+解法+○×+ひっかけ5）・出題実績18件・SectionCheck 進捗管理
+
+    本ページは **半年後（2026-11-27 頃）に削除予定**。新wikiへ移行してください。
+
+!!! info "📘 旧: このページは深掘り正典です（参考のため残置）"
     **役割分離**: 本ページ（denken-wiki-riron）は原理・誘電体挙動・球形コンデンサ等の**深掘り解説**を担う。試験N日前の**要点・公式・引っかけ確認**は → [secretary-portal #capacitor](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#capacitor) へ。
     **進捗管理**: 4ボタンセルフチェックは secretary 側に一本化。本ページに進捗UIは持たない。
 
