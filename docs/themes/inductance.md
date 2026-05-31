@@ -5,15 +5,25 @@ next: [RLC回路, 過渡現象]
 difficulty: ★★★★
 exam_frequency: 中
 analogy_type: flywheel
-version: v0.7
+version: v0.7-archived
 exam_importance_rank: A
+status: migrated
+migration_target: https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance
+migrated_at: 2026-05-31
 ---
 
-# 🌀 インダクタンス
+# 🌀 インダクタンス（アーカイブ）
 
-!!! info "📘 このページは深掘り正典です"
-    **役割分離**: 本ページ（denken-wiki-riron）は環状鉄心コイルの L 計算手順・和動／差動の判別・結合係数の導出等の**深掘り解説**を担う。試験N日前の**要点・公式・引っかけ確認**は → [secretary-portal #inductance](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance) へ。
-    **進捗管理**: 4ボタンセルフチェック／概念問題TestWidgetは secretary 側に一本化。本ページに進捗UIは持たない。
+!!! warning "📦 このページは新wikiへ移行済み（アーカイブ）"
+    **学習先**: → [secretary-portal #inductance](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance)（公式・解説・学習の3タブ構造）
+
+    新wikiは本ページの 公式・比較表（自己L vs 相互M／C vs L／和動 vs 差動）・勘違い・正答者vs誤答者・出題実績 を**完全吸収**し、さらに「メタ認知6症状表」「3条件Z即答チェック」「SVG図4枚」「単位変換ありの環状鉄心例題」「R05上問10解法カード」を追加している。
+
+    **本ページは過去資料として残存** — 本文の Level 2「T型等価回路」と Level 3「変電所・リアクトル・%Z」は新wiki未収録のため、深掘り参照用として活用可能。学習の主軸は新wikiに置くこと。
+
+[👉 新wiki #inductance（推奨学習先）を開く](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button .md-button--primary target=_blank rel=noopener }
+
+---
 
 !!! abstract "📍 学習マップ上の現在地"
     **前提** → [磁気回路](jiki-kairo.md)　→　**[インダクタンス]（現在地）**　→　**次** → [三相交流](sansou-kouryu.md)
@@ -253,4 +263,4 @@ exam_importance_rank: A
 
 ---
 
-*最終確認: 2026-04-01 | ステータス: v0.7（構造・公式・数値検証済み） | [バージョニング基準](../reference/versioning.md)*
+*最終確認: 2026-05-31 | ステータス: **v0.7-archived（新wikiへ移行済み・参照用に残存）** | [バージョニング基準](../reference/versioning.md)*
