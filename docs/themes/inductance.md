@@ -8,20 +8,20 @@ analogy_type: flywheel
 version: v0.7-archived
 exam_importance_rank: A
 status: migrated
-migration_target: https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance
+migration_target: https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance
 migrated_at: 2026-05-31
 ---
 
 # 🌀 インダクタンス（アーカイブ）
 
 !!! warning "📦 このページは新wikiへ移行済み（アーカイブ）"
-    **学習先**: → [secretary-portal #inductance](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance)（公式・解説・学習の3タブ構造）
+    **学習先**: → [secretary-portal #inductance](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance)（公式・解説・学習の3タブ構造）
 
     新wikiは本ページの 公式・比較表（自己L vs 相互M／C vs L／和動 vs 差動）・勘違い・正答者vs誤答者・出題実績 を**完全吸収**し、さらに「メタ認知6症状表」「3条件Z即答チェック」「SVG図4枚」「単位変換ありの環状鉄心例題」「R05上問10解法カード」を追加している。
 
     **本ページは過去資料として残存** — 本文の Level 2「T型等価回路」と Level 3「変電所・リアクトル・%Z」は新wiki未収録のため、深掘り参照用として活用可能。学習の主軸は新wikiに置くこと。
 
-[👉 新wiki #inductance（推奨学習先）を開く](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button .md-button--primary target=_blank rel=noopener }
+[👉 新wiki #inductance（推奨学習先）を開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance){ .md-button .md-button--primary target=_blank rel=noopener }
 
 ---
 
@@ -106,7 +106,7 @@ migrated_at: 2026-05-31
 
     **引っかかりやすいポイント**：==「直列接続だから単純に $L_1 + L_2$」と計算すると誤り==。相互結合がある場合は必ず $\pm 2M$ を加減する。
 
-[↩ 直前ハブで「公式」要点だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
+[↩ 直前ハブで「公式」要点だけ再確認](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
 
 ## 📊 比較表
 
@@ -147,7 +147,7 @@ migrated_at: 2026-05-31
 
     **覚え方**：コンデンサの直列とインダクタの並列が「同じ形の式」、コンデンサの並列とインダクタの直列が「同じ形の式」になる（完全に入れ替わっている）。
 
-[↩ 直前ハブで「比較表」要点だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
+[↩ 直前ハブで「比較表」要点だけ再確認](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
 
 ## 🕳️ よくある勘違いTOP3
 
@@ -169,7 +169,7 @@ migrated_at: 2026-05-31
 **❌ こう思いがち④**: 相互結合コイル回路の電圧計算では、自己インダクタンス分の電圧だけ考えればよい
 **✅ 実際は**: 相互結合がある場合、コイルの端子電圧は自己誘導（$L \frac{dI}{dt}$）と相互誘導（$M \frac{dI'}{dt}$）の両方を加減する必要がある。和動か差動かで符号が変わるため、向きの確認が必須。
 
-[↩ 直前ハブで「引っかけ4つ」だけ再確認](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
+[↩ 直前ハブで「引っかけ4つ」だけ再確認](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance){ .md-button target=_blank rel=noopener }
 
 ## 🧩 正答者 vs 誤答者
 
@@ -259,7 +259,7 @@ migrated_at: 2026-05-31
 !!! tip "深掘り完了 → 直前ハブで定着確認"
     本ページの深掘りが一通り終わったら、次は **試験対策モード** で要点・引っかけ・進捗管理（4ボタンセルフチェック／概念TestWidget）に進む。
 
-[↩ 直前ハブ #inductance へ戻る](https://kfurufuru.github.io/secretary-portal/denken3-riron-wiki.html#inductance){ .md-button .md-button--primary target=_blank rel=noopener }
+[↩ 直前ハブ #inductance へ戻る](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#inductance){ .md-button .md-button--primary target=_blank rel=noopener }
 
 ---
 
