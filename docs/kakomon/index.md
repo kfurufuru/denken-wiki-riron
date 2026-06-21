@@ -1,54 +1,18 @@
 ---
-tags: [過去問, マッピング]
+title: 過去問マッピング（新Wikiへ移転）
+search:
+  exclude: true
 ---
 
-# 過去問マッピング
+<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#trends">
 
-このセクションは理論科目の過去問とテーマ記事をリンクするインデックス。
-問題を解いて詰まったらテーマ記事へ戻る使い方を想定している。
+# このページは新しい理論Wikiに移転しました
 
----
+「**過去問マッピング**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
+数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
 
-## 使い方
+[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#trends){ .md-button .md-button--primary }
 
-- 過去問を解いて間違えた問題を確認する
-- 問題が属する分野・テーマを特定する
-- 下の表の「対応テーマリンク」から該当テーマ記事へ戻り、概念・解法を復習する
-- 再度類題を解いて定着を確認する
-- 分野ごとに弱点を把握したい場合は **[分野別一覧](by-field.md)** を使う
-- 特定年度の出題全体を確認したい場合は **[年度別一覧](by-year.md)** を使う
-
----
-
-## 分野別出題傾向（直近5年）
-
-| 分野 | 年度あたり出題数 | 出題の安定性 | 対応テーマリンク |
-|------|----------------|------------|----------------|
-| 電気回路（直流） | 2〜3問 | 極めて安定 | [直流回路](../themes/chokuryu-kairo.md) |
-| 電気回路（交流・RLC） | 2〜3問 | 安定 | [交流回路基礎](../themes/kouryu-kiso.md), [RLC回路](../themes/rlc-kairo.md) |
-| 電気回路（三相） | 1〜2問（B問題） | 安定 | [三相交流](../themes/sansou-kouryu.md) |
-| 電磁気 | 3〜5問 | 安定 | [静電気](../themes/seidenki.md), [コンデンサ](../themes/condenser.md), [電磁力](../themes/denjiryoku.md) |
-| 電子理論 | 2〜3問 | やや変動 | [半導体](../themes/handotai.md), [トランジスタ](../themes/transistor.md), [オペアンプ](../themes/opamp.md) |
-| 電気計測 | 1〜4問 | 年度差大 | [計器の原理](../themes/keiki.md), [ブリッジ回路](../themes/bridge.md) |
-
----
-
-## B問題の構成と攻略法
-
-B問題（問15〜18）は4問構成。典型パターンは次の通り。
-
-- **電気回路**: 2問（三相交流・RLC・過渡現象から出題されやすい）
-- **電磁気**: 1問
-- **電子理論 or 電気計測**: 1問
-
-!!! tip "B問題の攻略法"
-    B問題はA問題と同じ公式を複数組み合わせるだけ。難しく見えるが構造はシンプル。
-    **1問完答より部分点を確実に取る**戦略が有効。(a)だけ解けてもOK。
-
----
-
-## 一覧ページへのリンク
-
-- [年度別一覧](by-year.md) — 年度ごとに出題テーマを確認する
-- [分野別一覧](by-field.md) — 分野ごとに頻出問題タイプを確認する
-- [再出題ランキング](reuse-ranking.md) — H18〜R07上期の再出題頻度 TOP50
+<script>
+  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#trends");
+</script>
