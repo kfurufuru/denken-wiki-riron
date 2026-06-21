@@ -1,18 +1,15 @@
 ---
-title: バージョニング基準（新Wikiへ移転）
+title: バージョニング基準（新Wikiへ移行済み）
 search:
   exclude: true
 ---
 
-<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home">
+# バージョニング基準 — 新Wikiへ移行済み
 
-# このページは新しい理論Wikiに移転しました
+!!! success "✅ このページは新しい理論Wikiへ移行済みです"
+    「**バージョニング基準**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。**自動では移動しません** — 下のボタンから新Wikiへどうぞ。
 
-「**バージョニング基準**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
-数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
+[➡ 新Wikiで「バージョニング基準」を開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home){ .md-button .md-button--primary }
 
-[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home){ .md-button .md-button--primary }
-
-<script>
-  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home");
-</script>
+!!! note "なぜ移行したの？"
+    旧Wikiの理論テーマは新しい理論Wikiに一本化されました。旧ページはリンクの互換性と参照のために残しています。学習の主軸は新Wikiに置いてください。
