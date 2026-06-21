@@ -1,105 +1,18 @@
 ---
-hide:
-  - navigation
-  - toc
+title: 理論Wiki ホーム（新Wikiへ移転）
+search:
+  exclude: true
 ---
 
-# 電験3種 理論Wiki
+<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home">
 
-**公式×直感×過去問クロスリファレンス** — バス通勤中に読める、試験で使える理論科目の参照Wikiです。
+# このページは新しい理論Wikiに移転しました
 
----
+「**理論Wiki ホーム**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
+数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
 
-## このWikiの使い方
+[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home){ .md-button .md-button--primary }
 
-=== "📚 はじめて学ぶ"
-    **初学者パス**で依存関係順に学習する。
-
-    直流回路 → 静電気 → 交流基礎 → RLC → 三相 → 電磁気 → 電子理論
-
-    → [初学者パスへ](roadmap/beginner.md)
-
-=== "🔍 苦手を潰す"
-    **過去問逆引きパス**で間違えた問題からテーマを特定する。
-
-    「キルヒホッフ」「インピーダンス」「Y-Δ」などのキーワードでテーマを探す。
-
-    → [過去問逆引きへ](roadmap/by-weakness.md)
-
-=== "⚡ 直前確認"
-    **直前確認パス**で16テーマの「5秒で思い出す」を一気に確認する。
-
-    → [直前確認パスへ](roadmap/last-minute.md)
-
----
-
-## 16テーマ クイックアクセス
-
-> 重要度: **S**＝毎年必出 / **A**＝頻出 / **B**＝時々出る　｜　[分野別出題割合→](kakomon/by-field.md)
-
-### ⚡ 電気回路
-| テーマ | 重要度 | 難易度 |
-|--------|--------|--------|
-| [直流回路（オーム・キルヒホッフ・テブナン）](themes/chokuryu-kairo.md) | **S** | ★★★ |
-| [交流回路基礎（実効値・フェーザー・位相）](themes/kouryu-kiso.md) | **S** | ★★★★ |
-| [RLC回路（インピーダンス・共振・Q値）](themes/rlc-kairo.md) | **S** | ★★★★★ |
-| [交流電力（有効・無効・皮相・力率）](themes/kouryu-denryoku.md) | **S** | ★★★★ |
-| [三相交流（Y-Δ変換・三相電力）](themes/sansou-kouryu.md) | B | ★★★★★ |
-| [過渡現象（RC・RL時定数）](themes/kato-gensho.md) | B | ★★★★ |
-
-### 🧲 電磁気
-| テーマ | 重要度 | 難易度 |
-|--------|--------|--------|
-| [静電気（クーロン力・電界・電位）](themes/seidenki.md) | **S** | ★★★ |
-| [コンデンサ（静電容量・エネルギー）](themes/condenser.md) | **S** | ★★★ |
-| [電磁力（フレミング・電磁誘導）](themes/denjiryoku.md) | **S** | ★★★ |
-| [磁気回路（磁束・磁気抵抗）](themes/jiki-kairo.md) | **S** | ★★★★ |
-| [インダクタンス（自己・相互・エネルギー）](themes/inductance.md) | **S** | ★★★★ |
-
-### 💡 電子理論
-| テーマ | 重要度 | 難易度 |
-|--------|--------|--------|
-| [半導体（PN接合・ダイオード）](themes/handotai.md) | A | ★★★ |
-| [トランジスタ・FET（増幅回路）](themes/transistor.md) | A | ★★★★ |
-| [オペアンプ（反転・非反転）](themes/opamp.md) | A | ★★★ |
-
-### 📏 電気計測
-| テーマ | 重要度 | 難易度 |
-|--------|--------|--------|
-| [計器の原理と測定法](themes/keiki.md) | A | ★★★ |
-| [ブリッジ回路（ホイートストン・マクスウェル）](themes/bridge.md) | A | ★★★ |
-
----
-
-## リファレンス クイックアクセス
-
-| ページ | 用途 |
-|--------|------|
-| [頻出公式一覧](reference/formulas.md) | 試験直前の公式確認 |
-| [数学の道具箱](reference/math-tools.md) | 複素数・ベクトル・三角関数 |
-| [単位・次元チェック表](reference/units.md) | 計算の自己確認 |
-| [回路パターン集](reference/circuit-patterns.md) | 典型回路の解法テンプレート |
-| [用語集](reference/glossary.md) | 用語の定義確認 |
-
----
-
-## 📋 確認ステータス
-
-- ✅ **確認済み**: 教科書・過去問（電験王 H18〜R07上期）で検証済み
-- ⚠️ **要確認（v0.7draft）**: AI生成・構造検証済み・内容は参考書を正として使用
-- 各ページのヘッダーにバージョン表記（v0.7 / v0.7draft）でステータスを確認できます
-
----
-
-## このWikiについて
-
-!!! info "バージョン表記"
-    - **v0.7draft**: AI生成・構造検証済み・内容要確認
-    - **v0.7**: 教科書・過去問で検証済み（全テーマ現在の状態）
-    - **v1.0**: 過去問全問リンク・依存グラフ完成
-
-    出題実績データは電験王3（denken-ou.com）H18〜R07上期より収集（2026-03-30）。
-
-!!! warning "学習上の注意"
-    本Wikiの公式・数値は教科書や公式過去問で必ず確認してください。
-    AIが生成したコンテンツを含むため、誤りが含まれる可能性があります。
+<script>
+  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home");
+</script>

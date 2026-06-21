@@ -1,35 +1,18 @@
 ---
-tags: [電気計測, グループ概要]
+title: 電気計測（新Wikiへ移転）
+search:
+  exclude: true
 ---
 
-# 📏 電気計測
+<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home">
 
-計器の動作原理・測定回路・ブリッジ回路を扱う分野。全2テーマ。計算は電気回路の知識を流用でき、出題パターンが固定しているため得点しやすい。
+# このページは新しい理論Wikiに移転しました
 
----
+「**電気計測**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
+数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
 
-## テーマ一覧
+[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home){ .md-button .md-button--primary }
 
-| # | テーマ | 難易度 | 優先度 | リンク |
-|---|---|---|---|---|
-| 15 | 計器の原理 | ★★☆ | 🟡 重要 | [keiki](../keiki.md) |
-| 16 | ブリッジ回路 | ★★☆ | 🟡 重要 | [bridge](../bridge.md) |
-
----
-
-## 学習順序
-
-```
-計器の原理 → ブリッジ回路
-```
-
-計器種別（可動コイル・可動鉄片・誘導型）の特徴を押さえてから、ブリッジ回路（ホイートストン・マクスウェル）の平衡条件へ進む。
-
----
-
-## この分野のポイント
-
-- **計器の種類**：直流専用（可動コイル形）/ 交流対応（可動鉄片形・電力計）の使い分けが頻出
-- **倍率器・分流器**：測定レンジ拡張のための抵抗計算（直列＝倍率器、並列＝分流器）
-- **ブリッジ平衡条件**：向かい合う辺の積が等しい（$Z_1 Z_3 = Z_2 Z_4$）。未知インピーダンスを求める計算問題が定番
-- **誤差**：系統誤差・偶然誤差の区別と最確値の考え方
+<script>
+  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home");
+</script>

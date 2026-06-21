@@ -1,99 +1,18 @@
 ---
-tags: [テーマ一覧]
+title: テーマ別 目次（新Wikiへ移転）
+search:
+  exclude: true
 ---
 
-# テーマ一覧
+<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home">
 
-電験3種 理論科目の全16テーマ一覧です。
-難易度・出題頻度・優先度を参考に学習計画を立ててください。
+# このページは新しい理論Wikiに移転しました
 
----
+「**テーマ別 目次**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
+数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
 
-## 推奨学習順序
+[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home){ .md-button .md-button--primary }
 
-理論科目は以下の順序で学習すると、知識が積み上がりやすい。
-
-1. **電気回路（直流）** — オームの法則・キルヒホッフの法則が全分野の基礎
-2. **電気回路（交流・RLC・三相）** — 複素数とベクトル計算を使いこなす
-3. **電磁気** — クーロン力・電磁誘導・磁気回路。直流回路との対比で理解する
-4. **電子理論** — 半導体デバイスの動作原理。定性的理解から入る
-5. **電気計測** — 計器の種類と測定回路。計算は電気回路の知識を流用できる
-
-各分野の過去問マッピングは [過去問インデックス](../kakomon/index.md) を参照。
-
-### 依存関係グラフ
-
-各テーマの依存関係を視覚化したものです。矢印の方向に沿って学習すると知識が積み上がります。
-
-```mermaid
-graph TD
-    DC[直流回路<br>★★☆ 🔴最優先] --> AC[交流回路基礎<br>★★☆ 🔴最優先]
-    DC --> EM[電磁力<br>★★☆ 🟡重要]
-    DC --> SE[静電気<br>★★☆ 🔴最優先]
-    AC --> RLC[RLC回路<br>★★★ 🔴最優先]
-    AC --> AP[交流電力<br>★★☆ 🔴最優先]
-    AC --> SA[三相交流<br>★★★ 🔴最優先]
-    AC --> TR[過渡現象<br>★★★ 🟡重要]
-    SE --> CD[コンデンサ<br>★★☆ 🔴最優先]
-    EM --> MC[磁気回路<br>★★★ 🟡重要]
-    MC --> IL[インダクタンス<br>★★★ 🟡重要]
-    IL --> TR
-    DC --> SC[半導体<br>★★☆ 🟡重要]
-    SC --> TF[トランジスタ・FET<br>★★★ 🟡重要]
-    TF --> OP[オペアンプ<br>★★★ 🟢余裕があれば]
-    DC --> KI[計器の原理<br>★★☆ 🟡重要]
-    DC --> BR[ブリッジ回路<br>★★☆ 🟡重要]
-
-    style DC fill:#ff5252,color:#fff
-    style AC fill:#ff5252,color:#fff
-    style RLC fill:#ff5252,color:#fff
-    style AP fill:#ff5252,color:#fff
-    style SA fill:#ff5252,color:#fff
-    style SE fill:#ff5252,color:#fff
-    style CD fill:#ff5252,color:#fff
-    style TR fill:#ffab40,color:#fff
-    style EM fill:#ffab40,color:#fff
-    style MC fill:#ffab40,color:#fff
-    style IL fill:#ffab40,color:#fff
-    style SC fill:#ffab40,color:#fff
-    style TF fill:#ffab40,color:#fff
-    style KI fill:#ffab40,color:#fff
-    style BR fill:#ffab40,color:#fff
-    style OP fill:#69f0ae,color:#333
-```
-
----
-
-## テーマ一覧表
-
-| # | テーマ | 分野 | 難易度 | 出題頻度 | 優先度 | バージョン | リンク |
-|---|---|---|---|---|---|---|---|
-| 1 | 直流回路 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [chokuryu-kairo](chokuryu-kairo.md) |
-| 2 | 交流回路基礎 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [kouryu-kiso](kouryu-kiso.md) |
-| 3 | RLC回路 | 電気回路 | ★★★ | 高 | 🔴 最優先 | v0.7 | [rlc-kairo](rlc-kairo.md) |
-| 4 | 交流電力 | 電気回路 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [kouryu-denryoku](kouryu-denryoku.md) |
-| 5 | 三相交流 | 電気回路 | ★★★ | 高 | 🔴 最優先 | v0.7 | [sansou-kouryu](sansou-kouryu.md) |
-| 6 | 過渡現象 | 電気回路 | ★★★ | 中 | 🟡 重要 | v0.7 | [kato-gensho](kato-gensho.md) |
-| 7 | 静電気 | 電磁気 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [seidenki](seidenki.md) |
-| 8 | コンデンサ | 電磁気 | ★★☆ | 高 | 🔴 最優先 | v0.7 | [condenser](condenser.md) |
-| 9 | 電磁力 | 電磁気 | ★★☆ | 中 | 🟡 重要 | v0.7 | [denjiryoku](denjiryoku.md) |
-| 10 | 磁気回路 | 電磁気 | ★★★ | 中 | 🟡 重要 | v0.7 | [jiki-kairo](jiki-kairo.md) |
-| 11 | インダクタンス | 電磁気 | ★★★ | 中 | 🟡 重要 | v0.7 | [inductance](inductance.md) |
-| 12 | 半導体 | 電子理論 | ★★☆ | 中 | 🟡 重要 | v0.7 | [handotai](handotai.md) |
-| 13 | トランジスタ・FET | 電子理論 | ★★★ | 中 | 🟡 重要 | v0.7 | [transistor](transistor.md) |
-| 14 | オペアンプ | 電子理論 | ★★★ | 中 | 🟢 余裕があれば | v0.7 | [opamp](opamp.md) |
-| 15 | 計器の原理 | 電気計測 | ★★☆ | 中 | 🟡 重要 | v0.7 | [keiki](keiki.md) |
-| 16 | ブリッジ回路 | 電気計測 | ★★☆ | 中 | 🟡 重要 | v0.7 | [bridge](bridge.md) |
-
----
-
-## 難易度の目安
-
-- **★★☆**: 基礎〜標準。公式暗記＋計算練習で対応可能
-- **★★★**: やや難。回路の本質理解＋複素数演算が必要
-
-## 優先度の目安
-
-- 🔴 **最優先**: 毎年出題。確実に得点源にすべきテーマ
-- 🟡 **重要**: 頻出。理解しておくと他テーマへの波及効果が高い
-- 🟢 **余裕があれば**: 出題は少なめ。得意な人向け加点テーマ
+<script>
+  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home");
+</script>

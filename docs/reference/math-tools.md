@@ -1,124 +1,18 @@
 ---
-tags: [リファレンス, 数学, 複素数, ベクトル, 三角関数]
----
-# :triangular_ruler: 数学の道具箱
-
-理論科目を解くために必要な数学の道具をコンパクトにまとめたページ。
-
-> 電験3種は微積分・微分方程式不要。必要な数学はこれだけ。
-
-> **公式の意味や電験固有の公式は [頻出公式一覧](formulas.md) へ。このページは「計算技術の道具箱」。**
-
+title: 数学の道具箱（新Wikiへ移転）
+search:
+  exclude: true
 ---
 
-## 1. 三角関数の基本
+<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#complex-primer">
 
-| 角度 | \(\sin\theta\) | \(\cos\theta\) | \(\tan\theta\) |
-|:----:|:----:|:----:|:----:|
-| **0°**  | \(0\)     | \(1\)     | \(0\)     |
-| **30°** | \(\dfrac{1}{2}\) | \(\dfrac{\sqrt{3}}{2}\) | \(\dfrac{1}{\sqrt{3}}\) |
-| **45°** | \(\dfrac{\sqrt{2}}{2}\) | \(\dfrac{\sqrt{2}}{2}\) | \(1\) |
-| **60°** | \(\dfrac{\sqrt{3}}{2}\) | \(\dfrac{1}{2}\) | \(\sqrt{3}\) |
-| **90°** | \(1\)     | \(0\)     | 未定義 |
+# このページは新しい理論Wikiに移転しました
 
-よく使う公式: \(\sin^2\theta + \cos^2\theta = 1\), \(\tan\theta = \sin\theta/\cos\theta\)
+「**数学の道具箱**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
+数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
 
-位相のズレ: \(\sin\theta = \cos(90° - \theta)\) — sinはcosより**90°遅れ**
+[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#complex-primer){ .md-button .md-button--primary }
 
-!!! example "電験での使いどころ"
-    力率角 \(\varphi\): \(\cos\varphi = R/Z\)。インピーダンス三角形（斜辺=Z、底辺=R、高さ=\(X_L-X_C\)）で読む。
-
-!!! warning "⚠️ よくある間違い"
-    - `sin` と `cos` を逆に読む（力率 = cos φ であって sin φ ではない）
-    - 30°・60°の値を混同する（√3/2 と 1/2 どっちがどっち？ → 大きい角は大きい sin 値）
-
----
-
-## 2. ベクトルと位相（フェーザー）
-
-- 極形式 → 成分: \(A\angle\theta \rightarrow (A\cos\theta,\ A\sin\theta)\)
-- 成分 → 大きさ: \(|A| = \sqrt{x^2 + y^2}\)
-- 進み（容量性）は +j 方向（上）、遅れ（誘導性）は −j 方向（下）
-
-!!! example "電験での使いどころ"
-    RLC直列回路で各素子の電圧ベクトルを合成し、電源電圧と電流の位相差（力率角）を求める問題で使う。
-
-!!! warning "⚠️ よくある間違い"
-    - 進み・遅れの方向を逆に取る（容量性=+j=進み / 誘導性=−j=遅れ、と図に書いてから計算する）
-    - フェーザー合成で大きさだけ足し算してしまう（ベクトル合成であることを忘れずに）
-
----
-
-## 3. 複素数（交流回路の計算に必須）
-
-複素数の形式: \(z = a + jb\)（\(j = \sqrt{-1}\)）
-
-\[ |z| = \sqrt{a^2+b^2}, \quad \arg(z) = \arctan(b/a) \]
-
-\[ z_1 \cdot z_2 = |z_1||z_2|\angle(\theta_1+\theta_2), \quad \frac{z_1}{z_2} = \frac{|z_1|}{|z_2|}\angle(\theta_1-\theta_2) \]
-
-**暗記必須**: \(j^2 = -1\), \(\;1/j = -j\), \(\;j^4 = 1\)
-
-極形式と直交形式の変換: \(|z|\angle\theta = |z|(\cos\theta + j\sin\theta)\)
-
-!!! example "電験での使いどころ"
-    \(Z = R + jX_L\) で表し \(|Z|\) を計算して電流を求める。電流の大きさと位相を一度に得られる。
-
-!!! warning "⚠️ よくある間違い"
-    - `j² = −1` を忘れて `j² = 1` としてしまう
-    - `1/j = −j` を忘れて符号が逆になる（`1/j = j/(j²) = j/(−1) = −j` と毎回導出する習慣を）
-    - 除算は絶対値の比・偏角の差で求めると計算ミスが激減する
-
----
-
-## 4. 対数（dB計算に使う）
-
-- \(\log_{10} 10 = 1\), \(\log_{10} 100 = 2\), \(\log_{10} 2 \approx 0.301\)
-- 電圧比: \(20\log_{10}(V_2/V_1)\) dB
-- 電力比: \(10\log_{10}(P_2/P_1)\) dB
-
-!!! example "電験での使いどころ"
-    増幅器のゲイン計算。「電圧10倍 = +20 dB」「電力10倍 = +10 dB」は暗記で瞬答。
-
-!!! warning "⚠️ よくある間違い"
-    - 電圧比に `10log` を使う（正しくは `20log`）
-    - 電力比に `20log` を使う（正しくは `10log`）
-    - 覚え方：「電圧は2乗が電力なので係数が2倍 → 20log」
-
----
-
-## 5. 連立方程式（キルヒホッフ法で必要）
-
-**2元クラメールの公式**:
-
-\[
-\begin{cases} a_1 x + b_1 y = c_1 \\ a_2 x + b_2 y = c_2 \end{cases}
-\quad \Rightarrow \quad
-x = \frac{c_1 b_2 - c_2 b_1}{a_1 b_2 - a_2 b_1}
-\]
-
-**計算ミスを防ぐチェックポイント**: 電流の向きを図に書く / 求めた解を元式へ代入検証 / 単位が揃っているか確認
-
-!!! example "電験での使いどころ"
-    網目電流法・節点電位法でKVL/KCLを立てると2〜3元の連立方程式になる。3元以上は代入消去法が速い。
-
-!!! warning "⚠️ よくある間違い"
-    - 電流の向きを図に書かずにKVLを立てて符号ミス
-    - クラメールの分子の列を置き換える列を間違える（x は第1列、y は第2列を置換）
-    - 解を求めても元の式に代入検証しない → 必ず1本に代入して確かめる
-
----
-
-## 道具 × 問題タイプ 対応表
-
-| 問題タイプ | 使う道具 | 学習ページ |
-|-----------|---------|---------|
-| 直流回路 | 四則演算、KVL/KCL | [直流回路](../themes/chokuryu-kairo.md) |
-| 交流回路 | 複素数、三角関数、フェーザー | [交流基礎](../themes/kouryu-kiso.md) / [RLC回路](../themes/rlc-kairo.md) |
-| 共振・周波数 | 平方根、代数 | [RLC回路](../themes/rlc-kairo.md) |
-| 電磁気 | 比例・反比例、平方根 | [静電気](../themes/seidenki.md) / [電磁力](../themes/denjiryoku.md) |
-| 電子回路（増幅・dB） | 対数、比の計算 | [トランジスタ](../themes/transistor.md) / [オペアンプ](../themes/opamp.md) |
-
----
-
-*最終確認: 2026-03-30 | ステータス: v1.0 | [バージョニング基準](versioning.md)*
+<script>
+  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#complex-primer");
+</script>

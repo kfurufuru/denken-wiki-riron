@@ -1,39 +1,18 @@
 ---
-tags: [電磁気, グループ概要]
+title: 電磁気（新Wikiへ移転）
+search:
+  exclude: true
 ---
 
-# 🧲 電磁気
+<meta http-equiv="refresh" content="0; url=https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home">
 
-電荷・電場・磁場・電磁誘導を扱う分野。全5テーマ。静電気とコンデンサは毎年出題される最優先テーマ。
+# このページは新しい理論Wikiに移転しました
 
----
+「**電磁気**」は、新しい **理論Wiki（公式 / 解説 / 学習 の3タブ版）** に統合されました。
+数秒で自動的に移動します。移動しない場合は、下のボタンから移動してください。
 
-## テーマ一覧
+[➡ 新Wikiを開く](https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home){ .md-button .md-button--primary }
 
-| # | テーマ | 難易度 | 優先度 | リンク |
-|---|---|---|---|---|
-| 7 | 静電気 | ★★☆ | 🔴 最優先 | [seidenki](../seidenki.md) |
-| 8 | コンデンサ | ★★☆ | 🔴 最優先 | [condenser](../condenser.md) |
-| 9 | 電磁力 | ★★☆ | 🟡 重要 | [denjiryoku](../denjiryoku.md) |
-| 10 | 磁気回路 | ★★★ | 🟡 重要 | [jiki-kairo](../jiki-kairo.md) |
-| 11 | インダクタンス | ★★★ | 🟡 重要 | [inductance](../inductance.md) |
-
----
-
-## 学習順序
-
-```
-静電気 → コンデンサ → 電磁力 → 磁気回路 → インダクタンス
-```
-
-静電気（クーロンの法則・電場・電位）をベースにコンデンサへ。磁気回路は電気回路との対比で理解する。
-
----
-
-## この分野のポイント
-
-- **静電気**：クーロン力・電位・電場の方向の符号に注意
-- **コンデンサ**：直列/並列合成・エネルギー ½CV² が頻出
-- **電磁力**：フレミングの左手則・B×I×L の積
-- **磁気回路**：起磁力＝磁気抵抗×磁束（電気回路のオームの法則と対比）
-- **インダクタンス**：相互インダクタンス・加算/差引接続の符号が引っかけポイント
+<script>
+  window.location.replace("https://kfurufuru.github.io/secretary-portal-public/denken3-riron-wiki.html#home");
+</script>
